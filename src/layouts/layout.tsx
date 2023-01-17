@@ -6,11 +6,14 @@ interface propTypes {
     children: ReactNode
 }
 
+
+
 export default function Layout({ children }: {children: propTypes['children']}) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      {children}
+
       <Footer />
     </>
   )

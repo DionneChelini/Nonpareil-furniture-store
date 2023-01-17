@@ -28,7 +28,7 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
   categories: [
     {
-      name: 'Women',
+      name: 'Watches',
       featured: [
         {
           name: 'New Arrivals',
@@ -57,7 +57,97 @@ const navigation = {
       ],
     },
     {
-      name: 'Men',
+      name: 'Fashion',
+      featured: [
+        {
+          name: 'New Arrivals',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
+          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
+        },
+        {
+          name: 'Basic Tees',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
+          imageAlt: 'Model wearing light heather gray t-shirt.',
+        },
+        {
+          name: 'Accessories',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
+          imageAlt:
+            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
+        },
+        {
+          name: 'Carry',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
+          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+        },
+      ],
+    },
+    {
+      name: 'Furniture',
+      featured: [
+        {
+          name: 'New Arrivals',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
+          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
+        },
+        {
+          name: 'Basic Tees',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
+          imageAlt: 'Model wearing light heather gray t-shirt.',
+        },
+        {
+          name: 'Accessories',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
+          imageAlt:
+            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
+        },
+        {
+          name: 'Carry',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
+          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+        },
+      ],
+    },
+    {
+      name: 'Exotic Cars',
+      featured: [
+        {
+          name: 'New Arrivals',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
+          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
+        },
+        {
+          name: 'Basic Tees',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
+          imageAlt: 'Model wearing light heather gray t-shirt.',
+        },
+        {
+          name: 'Accessories',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
+          imageAlt:
+            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
+        },
+        {
+          name: 'Carry',
+          href: '#',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
+          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+        },
+      ],
+    },
+    {
+      name: 'Jets',
       featured: [
         {
           name: 'New Arrivals',
@@ -192,18 +282,7 @@ export default function Example() {
                   ))}
                 </div>
 
-                <div className="space-y-6 border-t border-gray-200 py-6 px-4">
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Create an account
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                      Sign in
-                    </a>
-                  </div>
-                </div>
+      
 
                 <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                   {/* Currency selector */}
@@ -235,7 +314,7 @@ export default function Example() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative">
+      <header className="relative z-50">
         <nav aria-label="Top">
           {/* Top navigation */}
           <div className="bg-900">
@@ -263,14 +342,6 @@ export default function Example() {
                 </div>
               </form>
 
-              <div className="flex items-center space-x-6">
-                <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
-                  Sign in
-                </a>
-                <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
-                  Create an account
-                </a>
-              </div>
             </div>
           </div>
 
@@ -281,14 +352,10 @@ export default function Example() {
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                    <a href="#">
-                      <span className="sr-only">Your Company</span>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt=""
-                      />
-                    </a>
+                
+              
+                 
+                    
                   </div>
 
                   <div className="hidden h-full lg:flex">

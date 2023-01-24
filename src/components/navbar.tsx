@@ -23,163 +23,155 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import image1 from '@/images/photos/Rolex_Submariner.jpg'
+import image2 from '@/images/photos/AP_Royal.jpg'
+import image3 from '@/images/photos/Geneva.jpg'
+import image4 from '@/images/photos/image-3.jpg'
+import image5 from '@/images/photos/chanel.jpg'
+import image6 from '@/images/photos/panarei.jpg'
+import image7 from '@/images/photos/vanceet.jpg'
+import logo from '@/images/logo.png'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
+interface navigation {
+  categories: [{ name: string, featured: [{ name: string, href: string, imageSrc?: string, imageAlt?: string, selection?: [{ href: string, subcategory: string }] }] }]
+}
+
+
+
 const navigation = {
   categories: [
     {
-      name: 'Watches',
+      name: 'Main Brands',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'ROLEX',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageSrc: image1,
           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+          selection: [
+            { href: "#", subcategory: "Daytona" },
+            { href: "#", subcategory: "Submariner" },
+            { href: "#", subcategory: "GMT Master" },
+            { href: "#", subcategory: "Datejust" },
+            { href: "#", subcategory: "Daydate" },
+            { href: "#", subcategory: "Oyster Perpectual" },
+            { href: "#", subcategory: "Sea Dweller" },
+            { href: "#", subcategory: "Sky Dweller" },
+            { href: "#", subcategory: "Yacht Master" },
+            { href: "#", subcategory: "Others" },
+
+          ]
         },
         {
-          name: 'Basic Tees',
+          name: 'AUDEMARS PIGUET',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+          imageSrc: image2,
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+          selection: [
+            { href: "#", subcategory: "Royal Oak" },
+            { href: "#", subcategory: "Royal Oak Offshore" },
+            { href: "#", subcategory: "Royal Oak Concept" },
+            { href: "#", subcategory: "Code 11.59" },
+            { href: "#", subcategory: "Others" },
+          ]
         },
         {
-          name: 'Accessories',
+          name: 'PATEK PHILIPPE',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-03.jpg',
+          imageSrc: image3,
           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+          selection: [
+            { href: "#", subcategory: "Grand Complications" },
+            { href: "#", subcategory: "Nautilus" },
+            { href: "#", subcategory: "Aquanaut" },
+            { href: "#", subcategory: "Complications" },
+            { href: "#", subcategory: "Calatrava" },
+            { href: "#", subcategory: "Others" },
+          ]
         },
         {
-          name: 'Carry',
+          name: 'RICHARD MILLE',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-04.jpg',
+          imageSrc: image4,
           imageAlt: 'Model opening tan leather long wallet with credit card pockets and cash pouch.',
+          selection: [
+            { href: "#", subcategory: "Tourbillon" },
+            { href: "#", subcategory: "Men" },
+            { href: "#", subcategory: "Ladies" },
+
+
+          ]
         },
       ],
     },
     {
-      name: 'Fashion',
+      name: 'Other Brands',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'A - H',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
-          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
+          imageSrc: image5,
+          imageAlt: '',
+          selection: [
+            { href: "#", subcategory: "Blancpain" },
+            { href: "#", subcategory: "Bvlgari" },
+            { href: "#", subcategory: "Cartier" },
+            { href: "#", subcategory: "Chanel" },
+            { href: "#", subcategory: "Chopard" },
+            { href: "#", subcategory: "Dietrich" },
+            { href: "#", subcategory: "Franck Muller" },
+            { href: "#", subcategory: "Girard Perregaux" },
+            { href: "#", subcategory: "Glashutte" },
+            { href: "#", subcategory: "Gucci" },
+            { href: "#", subcategory: "Hermes" },
+            { href: "#", subcategory: "Hublot" },
+            { href: "#", subcategory: "HYT" },
+            { href: "#", subcategory: "H. Moser & Cie" }
+          ]
         },
         {
-          name: 'Basic Tees',
+          name: 'I - Q',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-          imageAlt: 'Model wearing light heather gray t-shirt.',
+          imageSrc: image6,
+          imageAlt: '',
+          selection: [
+            { href: "#", subcategory: "IWC" },
+            { href: "#", subcategory: "Jaeger-LeCoultre" },
+            { href: "#", subcategory: "Longines" },
+            { href: "#", subcategory: "Montblanc" },
+            { href: "#", subcategory: "Omega" },
+            { href: "#", subcategory: "Panerai" },
+            { href: "#", subcategory: "Piaget" },
+
+          ]
         },
         {
-          name: 'Accessories',
+          name: 'R - Z',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
-          imageAlt:
-            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
-        },
-        {
-          name: 'Carry',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+          imageSrc: image7,
+          imageAlt: '',
+          selection: [
+            { href: "#", subcategory: "Roger Dubuis" },
+            { href: "#", subcategory: "Tagheuer" },
+            { href: "#", subcategory: "Tudor" },
+            { href: "#", subcategory: "Vacheron Constantin" },
+            { href: "#", subcategory: "Vancleef" },
+            { href: "#", subcategory: "Zenith" },
+          ]
         },
       ],
     },
-    {
-      name: 'Furniture',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
-          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
-        },
-        {
-          name: 'Basic Tees',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-          imageAlt: 'Model wearing light heather gray t-shirt.',
-        },
-        {
-          name: 'Accessories',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
-          imageAlt:
-            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
-        },
-        {
-          name: 'Carry',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
-        },
-      ],
-    },
-    {
-      name: 'Exotic Cars',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
-          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
-        },
-        {
-          name: 'Basic Tees',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-          imageAlt: 'Model wearing light heather gray t-shirt.',
-        },
-        {
-          name: 'Accessories',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
-          imageAlt:
-            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
-        },
-        {
-          name: 'Carry',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
-        },
-      ],
-    },
-    {
-      name: 'Jets',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
-          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
-        },
-        {
-          name: 'Basic Tees',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-          imageAlt: 'Model wearing light heather gray t-shirt.',
-        },
-        {
-          name: 'Accessories',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
-          imageAlt:
-            'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
-        },
-        {
-          name: 'Carry',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
-        },
-      ],
-    },
+
+
+
   ],
   pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
+    { name: 'Second Hand Watches', href: '/collection/second-hand-luxury-watches' },
+    { name: 'About Us', href: '/who-are-we' },
+
+    { name: 'FAQ', href: '/faq' },
   ],
 }
 
@@ -252,18 +244,19 @@ export default function Example() {
                     {navigation.categories.map((category) => (
                       <Tab.Panel key={category.name} className="space-y-12 px-4 py-6">
                         <div className="grid grid-cols-2 gap-x-4 gap-y-10">
-                          {category.featured.map((item) => (
+                          {category.featured.map((item, i) => (
                             <div key={item.name} className="group relative">
                               <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <img src={item.imageSrc} alt={item.imageAlt} className="object-cover object-center" />
+                                <Image src={item.imageSrc} alt={item.imageAlt} width={400} height={400} className="object-cover object-center" />
                               </div>
+
                               <a href={item.href} className="mt-6 block text-sm font-medium text-gray-900">
                                 <span className="absolute inset-0 z-10" aria-hidden="true" />
                                 {item.name}
                               </a>
-                              <p aria-hidden="true" className="mt-1 text-sm text-gray-500">
-                                Shop now
-                              </p>
+
+                              {category.name === 'Main Brands' && item.selection.map((j, i) => <Link href={j.href} key={i} aria-hidden="true" className="mt-1 flex-col flex text-sm text-gray-500">{j.subcategory}</Link>)}
+
                             </div>
                           ))}
                         </div>
@@ -282,32 +275,9 @@ export default function Example() {
                   ))}
                 </div>
 
-      
 
-                <div className="space-y-6 border-t border-gray-200 py-6 px-4">
-                  {/* Currency selector */}
-                  <form>
-                    <div className="inline-block">
-                      <label htmlFor="mobile-currency" className="sr-only">
-                        Currency
-                      </label>
-                      <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
-                        <select
-                          id="mobile-currency"
-                          name="currency"
-                          className="flex items-center rounded-md border-transparent bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-gray-700 focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-800"
-                        >
-                          {currencies.map((currency) => (
-                            <option key={currency}>{currency}</option>
-                          ))}
-                        </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                          <ChevronDownIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+
+
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -317,33 +287,7 @@ export default function Example() {
       <header className="relative z-50">
         <nav aria-label="Top">
           {/* Top navigation */}
-          <div className="bg-900">
-            <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-              {/* Currency selector */}
-              <form>
-                <div>
-                  <label htmlFor="desktop-currency" className="sr-only">
-                    Currency
-                  </label>
-                  <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
-                    <select
-                      id="desktop-currency"
-                      name="currency"
-                      className="flex items-center rounded-md border-transparent bg-gray-900 bg-none py-0.5 pl-2 pr-5 text-sm font-medium text-white focus:border-transparent focus:outline-none focus:ring-0 group-hover:text-gray-100"
-                    >
-                      {currencies.map((currency) => (
-                        <option key={currency}>{currency}</option>
-                      ))}
-                    </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                      <ChevronDownIcon className="h-5 w-5 text-gray-300" aria-hidden="true" />
-                    </div>
-                  </div>
-                </div>
-              </form>
 
-            </div>
-          </div>
 
           {/* Secondary navigation */}
           <div className="bg-white">
@@ -351,12 +295,16 @@ export default function Example() {
               <div className="border-b border-gray-200">
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
-                  <div className="hidden lg:flex lg:flex-1 lg:items-center">
-                
-              
-                 
-                    
+                  <div className="hidden lg:flex-1 lg:flex lg:items-center">
+                    <Link href="/">
+                      <span className="sr-only">Workflow</span>
+                      <Image
+                        className="h-14  w-auto"
+                        src={logo} alt=""
+                      />
+                    </Link>
                   </div>
+
 
                   <div className="hidden h-full lg:flex">
                     {/* Flyout menus */}
@@ -395,22 +343,26 @@ export default function Example() {
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-8">
                                         <div className="grid grid-cols-4 gap-y-10 gap-x-8 py-16">
-                                          {category.featured.map((item) => (
+                                          {category.featured.map((item, i) => (
                                             <div key={item.name} className="group relative">
+
                                               <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                <img
+                                                <Image
+                                                  width={300}
+                                                  height={300}
                                                   src={item.imageSrc}
                                                   alt={item.imageAlt}
                                                   className="object-cover object-center"
                                                 />
                                               </div>
+
                                               <a href={item.href} className="mt-4 block font-medium text-gray-900">
                                                 <span className="absolute inset-0 z-10" aria-hidden="true" />
                                                 {item.name}
                                               </a>
-                                              <p aria-hidden="true" className="mt-1">
-                                                Shop now
-                                              </p>
+
+                                              {item.selection.map((j, index) => <Link href={j.href} key={index} aria-hidden="true" className="flex-col flex mt-1">{j.subcategory}</Link>)}
+
                                             </div>
                                           ))}
                                         </div>
@@ -455,14 +407,14 @@ export default function Example() {
                   </div>
 
                   {/* Logo (lg-) */}
-                  <a href="#" className="lg:hidden">
-                    <span className="sr-only">Your Company</span>
-                    <img
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  <Link href="/" className="lg:hidden">
+                    <span className="sr-only">Nonpareil Collection</span>
+                    <Image
+                      src={logo}
                       alt=""
                       className="h-8 w-auto"
                     />
-                  </a>
+                  </Link>
 
                   <div className="flex flex-1 items-center justify-end">
                     <a href="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">

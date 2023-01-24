@@ -3,12 +3,12 @@ import Footer from '../components/footer'
 import { ReactNode } from 'react'
 
 interface propTypes {
-    children: ReactNode
+  children: ReactNode
 }
 
 
 
-export default function Layout({ children }: {children: propTypes['children']}) {
+export default function Layout({ children }: { children: propTypes['children'] }) {
   return (
     <>
       <Navbar />

@@ -1,27 +1,27 @@
 /* This example requires Tailwind CSS v2.0+ */
 
-const footerNavigation = {
-  service: [
-    { name: 'Shipping & returns', href: 'shipping-and-returns' },
-    { name: 'Refund policy', href: '/refund-policy' },
-    { name: 'How to buy', href: '/how-to-buy' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Get in touch', href: '/contact' },
-  ],
-  company: [
-    { name: 'Who we are', href: '/who-are-we' },
-    { name: 'Terms & conditions', href: '/terms-and-conditions' },
-    { name: 'Privacy', href: '/privacy-policy' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Careers', href: '/careers' },
-  ],
-  connect: [
-    { name: 'Instagram', href: '#' },
-    { name: 'Pinterest', href: '#' },
-    { name: 'Twitter', href: '#' },
-  ],
-}
 export default function Example() {
+  let footerNavigation = {
+    service: [
+      { name: 'Shipping & returns', href: 'shipping-and-returns' },
+      { name: 'Refund policy', href: '/refund-policy' },
+      { name: 'How to buy', href: '/how-to-buy' },
+      { name: 'FAQ', href: '/faq' },
+      { name: 'Get in touch', href: '/contact' },
+    ],
+    company: [
+      { name: 'Who we are', href: '/who-are-we' },
+      { name: 'Terms & conditions', href: '/terms-and-conditions' },
+      { name: 'Privacy', href: '/privacy-policy' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Careers', href: '/careers' },
+    ],
+    connect: [
+      { name: 'Instagram', href: '#' },
+      { name: 'Pinterest', href: '#' },
+      { name: 'Twitter', href: '#' },
+    ],
+  }
   return (
     <footer aria-labelledby="footer-heading" className="bg-white">
       <h2 id="footer-heading" className="sr-only">

@@ -21,8 +21,6 @@ function classNames(...classes: string[]) {
 
 export default function ProductDisplay({
   data,
-
-
 }: {
   data: any;
 

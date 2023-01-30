@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '../../../../../../../../paths/category_sort_paths'
-import ProductDisplay from "../../../../../../../../components/ProductDisplay";
+import ProductDisplay from "@/components/ProductDisplay";
 
 export default function Example(props: any) {
   return <ProductDisplay data={props.data} />

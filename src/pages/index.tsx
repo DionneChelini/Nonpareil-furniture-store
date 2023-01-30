@@ -1136,7 +1136,7 @@ function Hero(props: any) {
                 priority
               />
               <p className='tracking-wide text-white  sm:text-xl font-thin'>
-                The Ultimate Destination For Luxurious Timepieces{" "}
+                The Ultimate Destination For Luxurious Watches{" "}
               </p>
               <motion.div
                 whileHover={{

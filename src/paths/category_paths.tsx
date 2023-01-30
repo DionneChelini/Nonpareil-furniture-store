@@ -1,0 +1,37 @@
+
+
+const paths = [
+    { params: { brand: "richard-mille", page: "1" } },
+    { params: { brand: "rolex", page: "1" } },
+    { params: { brand: "audemars-piguet", page: "1" } },
+    { params: { brand: "patek-philippe", page: "1" } },
+    { params: { brand: "blancpain", page: "1" } },
+    { params: { brand: "bvlgari", page: "1" } },
+    { params: { brand: "cartier", page: "1" } },
+    { params: { brand: "chanel", page: "1" } },
+    { params: { brand: "chopard", page: "1" } },
+    { params: { brand: "dietrich", page: "1" } },
+    { params: { brand: "franck-muller", page: "1" } },
+    { params: { brand: "girard-perregaux", page: "1" } },
+    { params: { brand: "glashutte", page: "1" } },
+    { params: { brand: "gucci", page: "1" } },
+    { params: { brand: "hermes", page: "1" } },
+    { params: { brand: "hublot", page: "1" } },
+    { params: { brand: "iwc", page: "1" } },
+    { params: { brand: "jaeger-lecoultre", page: "1" } },
+    { params: { brand: "longines", page: "1" } },
+    { params: { brand: "montblanc", page: "1" } },
+    { params: { brand: "omega", page: "1" } },
+    { params: { brand: "panerai", page: "1" } },
+    { params: { brand: "piaget", page: "1" } },
+    { params: { brand: "roger-dubuis", page: "1" } },
+    { params: { brand: "tagheuer", page: "1" } },
+    { params: { brand: "tudor", page: "1" } },
+    { params: { brand: "vacheron-constantin", page: "1" } },
+    { params: { brand: "vancleef", page: "1" } },
+    { params: { brand: "zenith", page: "1" } },
+    { params: { brand: "others", page: "1" } },
+    { params: { brand: "others", page: "2" } },
+    { params: { brand: "others", page: "3" } }
+]
+export default paths

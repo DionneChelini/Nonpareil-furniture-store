@@ -14,15 +14,16 @@
   ```
 */
 import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import { Dialog, Popover, Tab, Transition, Disclosure } from '@headlessui/react'
+import { useRouter } from 'next/router'
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
+  DevicePhoneMobileIcon,
+  ArrowLeftIcon,
   QuestionMarkCircleIcon,
-  ShoppingBagIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import image1 from '@/images/photos/Rolex_Submariner.jpg'
 import image2 from '@/images/photos/AP_Royal.jpg'
 import image3 from '@/images/photos/Geneva.jpg'
@@ -30,7 +31,7 @@ import image4 from '@/images/photos/image-3.jpg'
 import image5 from '@/images/photos/chanel.jpg'
 import image6 from '@/images/photos/panarei.jpg'
 import image7 from '@/images/photos/vanceet.jpg'
-import logo from '@/images/logo.png'
+import logo from '@/images/navbarlogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -43,32 +44,32 @@ interface navigation {
 const navigation = {
   categories: [
     {
-      name: 'Main Brands',
+      name: 'Main brands',
       featured: [
         {
           name: 'ROLEX',
-          href: '#',
+          href: '/collection/brand/rolex/1',
           imageSrc: image1,
-          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+          imageAlt: 'Nonpareil Collection - Rolex Luxury Watches For Sale.',
           selection: [
-            { href: "#", subcategory: "Daytona" },
-            { href: "#", subcategory: "Submariner" },
-            { href: "#", subcategory: "GMT Master" },
-            { href: "#", subcategory: "Datejust" },
-            { href: "#", subcategory: "Daydate" },
-            { href: "#", subcategory: "Oyster Perpectual" },
-            { href: "#", subcategory: "Sea Dweller" },
-            { href: "#", subcategory: "Sky Dweller" },
-            { href: "#", subcategory: "Yacht Master" },
-            { href: "#", subcategory: "Others" },
+            { href: "/collection/brand/rolex/1/subcategory/daytona", subcategory: "Daytona" },
+            { href: "/collection/brand/rolex/1/subcategory/submariner", subcategory: "Submariner" },
+            { href: "/collection/brand/rolex/1/subcategory/GMT-master", subcategory: "GMT Master" },
+            { href: "/collection/brand/rolex/1/subcategory/datejust", subcategory: "Datejust" },
+            { href: "/collection/brand/rolex/1/subcategory/daydate", subcategory: "Daydate" },
+            { href: "/collection/brand/rolex/1/subcategory/oyster-perpectual", subcategory: "Oyster Perpectual" },
+            { href: "/collection/brand/rolex/1/subcategory/sea-dweller", subcategory: "Sea Dweller" },
+            { href: "/collection/brand/rolex/1/subcategory/sky-dweller", subcategory: "Sky Dweller" },
+            { href: "/collection/brand/rolex/1/subcategory/yacht-master", subcategory: "Yacht Master" },
+            { href: "/collection/brand/rolex/1/subcategory/others", subcategory: "Others" },
 
           ]
         },
         {
           name: 'AUDEMARS PIGUET',
-          href: '#',
+          href: '/collection/brand/audemars-piguet/1',
           imageSrc: image2,
-          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+          imageAlt: 'Nonpareil Collection- Audemars Piguet Luxury Watches for Sale',
           selection: [
             { href: "#", subcategory: "Royal Oak" },
             { href: "#", subcategory: "Royal Oak Offshore" },
@@ -79,9 +80,9 @@ const navigation = {
         },
         {
           name: 'PATEK PHILIPPE',
-          href: '#',
+          href: '/collection/brand/patek-philippe/1',
           imageSrc: image3,
-          imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+          imageAlt: 'Nonpareil Collection- Patek Philippe Luxury Watches for Sale',
           selection: [
             { href: "#", subcategory: "Grand Complications" },
             { href: "#", subcategory: "Nautilus" },
@@ -93,9 +94,9 @@ const navigation = {
         },
         {
           name: 'RICHARD MILLE',
-          href: '#',
+          href: '/collection/brand/richard-mille/1',
           imageSrc: image4,
-          imageAlt: 'Model opening tan leather long wallet with credit card pockets and cash pouch.',
+          imageAlt: 'Nonpareil Collection- Richard Mille Luxury Watches for Sale, Tourbillon Watches Richard Mille',
           selection: [
             { href: "#", subcategory: "Tourbillon" },
             { href: "#", subcategory: "Men" },
@@ -113,13 +114,11 @@ const navigation = {
           name: 'A - H',
           href: '#',
           imageSrc: image5,
-          imageAlt: '',
+          imageAlt: 'Nonpareil Collection - Cartier Watch, Gucci Watch, Hermes Watch, Franck Muller Watch, Hublot Watch, Bvlgari Watch Collection',
           selection: [
             { href: "#", subcategory: "Blancpain" },
             { href: "#", subcategory: "Bvlgari" },
             { href: "#", subcategory: "Cartier" },
-            { href: "#", subcategory: "Chanel" },
-            { href: "#", subcategory: "Chopard" },
             { href: "#", subcategory: "Dietrich" },
             { href: "#", subcategory: "Franck Muller" },
             { href: "#", subcategory: "Girard Perregaux" },
@@ -127,15 +126,13 @@ const navigation = {
             { href: "#", subcategory: "Gucci" },
             { href: "#", subcategory: "Hermes" },
             { href: "#", subcategory: "Hublot" },
-            { href: "#", subcategory: "HYT" },
-            { href: "#", subcategory: "H. Moser & Cie" }
           ]
         },
         {
           name: 'I - Q',
           href: '#',
           imageSrc: image6,
-          imageAlt: '',
+          imageAlt: 'Nonpareil Collection - IWC Watch, Montblanc Watch, Omega Watch, Panerai Watch, Piaget Watches For Sale Through Our Online Store',
           selection: [
             { href: "#", subcategory: "IWC" },
             { href: "#", subcategory: "Jaeger-LeCoultre" },
@@ -151,7 +148,7 @@ const navigation = {
           name: 'R - Z',
           href: '#',
           imageSrc: image7,
-          imageAlt: '',
+          imageAlt: 'Nonpareil Collection - Roger Dubuis Watch, Tagheuer Watch, Tudor Watch',
           selection: [
             { href: "#", subcategory: "Roger Dubuis" },
             { href: "#", subcategory: "Tagheuer" },
@@ -167,12 +164,7 @@ const navigation = {
 
 
   ],
-  pages: [
-    { name: 'Second Hand Watches', href: '/collection/second-hand-luxury-watches' },
-    { name: 'About Us', href: '/who-are-we' },
 
-    { name: 'FAQ', href: '/faq' },
-  ],
 }
 
 function classNames(...classes: string[]) {
@@ -180,10 +172,11 @@ function classNames(...classes: string[]) {
 }
 
 export default function Example() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const router = useRouter()
 
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-6">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -240,22 +233,22 @@ export default function Example() {
                       ))}
                     </Tab.List>
                   </div>
-                  <Tab.Panels as={Fragment}>
+                  <Tab.Panels as={Fragment} >
                     {navigation.categories.map((category) => (
                       <Tab.Panel key={category.name} className="space-y-12 px-4 py-6">
-                        <div className="grid grid-cols-2 gap-x-4 gap-y-10">
+                        <div className="grid grid-cols-2 gap-x-4 gap-y-10" >
                           {category.featured.map((item, i) => (
                             <div key={item.name} className="group relative">
-                              <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                              <Link href={item.href} className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                 <Image src={item.imageSrc} alt={item.imageAlt} width={400} height={400} className="object-cover object-center" />
-                              </div>
+                              </Link>
 
-                              <a href={item.href} className="mt-6 block text-sm font-medium text-gray-900">
+                              <Link href={item.href} className="mt-6 block text-sm font-medium text-gray-900">
                                 <span className="absolute inset-0 z-10" aria-hidden="true" />
                                 {item.name}
-                              </a>
+                              </Link>
 
-                              {category.name === 'Main Brands' && item.selection.map((j, i) => <Link href={j.href} key={i} aria-hidden="true" className="mt-1 flex-col flex text-sm text-gray-500">{j.subcategory}</Link>)}
+                              {category.name === 'Main Brands' && item.selection.map((j, i) => <Link href={j.href} key={i} aria-hidden="true" className="mt-1 flex-col flex text-sm text-gray-500 z-10">{j.subcategory}</Link>)}
 
                             </div>
                           ))}
@@ -265,15 +258,7 @@ export default function Example() {
                   </Tab.Panels>
                 </Tab.Group>
 
-                <div className="space-y-6 border-t border-gray-200 py-6 px-4">
-                  {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <a href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
-                        {page.name}
-                      </a>
-                    </div>
-                  ))}
-                </div>
+
 
 
 
@@ -291,18 +276,19 @@ export default function Example() {
 
           {/* Secondary navigation */}
           <div className="bg-white">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="border-b border-gray-200">
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
-                  <div className="hidden lg:flex-1 lg:flex lg:items-center">
-                    <Link href="/">
-                      <span className="sr-only">Workflow</span>
-                      <Image
-                        className="h-14  w-auto"
-                        src={logo} alt=""
-                      />
+                  <div className="hidden lg:flex-1 text-sm lg:flex lg:items-center  'text-gray-900 border-transparent flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium">
+                    {router.asPath !== '/' && <Link href="/">
+
+                      <div className='flex justify-center items-center'>
+                        <ArrowLeftIcon className="h-4 w-4 mr-2kk" aria-hidden="true" />
+                        Back Home
+                      </div>
                     </Link>
+                    }
                   </div>
 
 
@@ -344,30 +330,33 @@ export default function Example() {
                                       <div className="mx-auto max-w-7xl px-8">
                                         <div className="grid grid-cols-4 gap-y-10 gap-x-8 py-16">
                                           {category.featured.map((item, i) => (
+
                                             <div key={item.name} className="group relative">
 
-                                              <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                <Image
-                                                  width={300}
-                                                  height={300}
-                                                  src={item.imageSrc}
-                                                  alt={item.imageAlt}
-                                                  className="object-cover object-center"
-                                                />
-                                              </div>
+                                              <Link href={item.href} className="mt-4 block font-medium text-gray-900">
+                                                <Popover.Button className="aspect-w-1 mb-2 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                                  <Image
+                                                    width={300}
+                                                    height={300}
+                                                    src={item.imageSrc}
+                                                    alt={item.imageAlt}
+                                                    className="object-cover object-center"
+                                                  />
+                                                </Popover.Button>
+                                              </Link>
 
-                                              <a href={item.href} className="mt-4 block font-medium text-gray-900">
-                                                <span className="absolute inset-0 z-10" aria-hidden="true" />
-                                                {item.name}
-                                              </a>
+                                              <span className="inset-0 relative z-10" aria-hidden="true" />
+                                              <Link href={item.href} className="font-semibold text-gray-900"> <Popover.Button> {item.name}</Popover.Button></Link>
 
-                                              {item.selection.map((j, index) => <Link href={j.href} key={index} aria-hidden="true" className="flex-col flex mt-1">{j.subcategory}</Link>)}
+                                              {item.selection.map((j, index) => <Link href={j.href} key={index} aria-hidden="true" className="flex-col z-10 flex mt-1"><Popover.Button className="flex">{j.subcategory} </Popover.Button></Link>)}
 
                                             </div>
+
                                           ))}
                                         </div>
                                       </div>
                                     </div>
+
                                   </Popover.Panel>
                                 </Transition>
                               </>
@@ -375,15 +364,7 @@ export default function Example() {
                           </Popover>
                         ))}
 
-                        {navigation.pages.map((page) => (
-                          <a
-                            key={page.name}
-                            href={page.href}
-                            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                          >
-                            {page.name}
-                          </a>
-                        ))}
+
                       </div>
                     </Popover.Group>
                   </div>
@@ -399,48 +380,37 @@ export default function Example() {
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
 
-                    {/* Search */}
-                    <a href="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
-                      <span className="sr-only">Search</span>
-                      <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
-                    </a>
+
                   </div>
 
-                  {/* Logo (lg-) */}
-                  <Link href="/" className="lg:hidden">
-                    <span className="sr-only">Nonpareil Collection</span>
-                    <Image
-                      src={logo}
-                      alt=""
-                      className="h-8 w-auto"
-                    />
-                  </Link>
 
                   <div className="flex flex-1 items-center justify-end">
-                    <a href="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
-                      Search
-                    </a>
+                    <Link href="/faq" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                      FAQ
+                    </Link>
 
                     <div className="flex items-center lg:ml-8">
                       {/* Help */}
-                      <a href="#" className="p-2 text-gray-400 hover:text-gray-500 lg:hidden">
-                        <span className="sr-only">Help</span>
+                      <Link href="/who-are-we" className="p-2 text-gray-400 hover:text-gray-500 lg:hidden">
+                        <span className="sr-only">About Us</span>
                         <QuestionMarkCircleIcon className="h-6 w-6" aria-hidden="true" />
-                      </a>
-                      <a href="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
-                        Help
-                      </a>
+                      </Link>
+                      <Link href="/who-are-we" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                        About Us
+                      </Link>
 
                       {/* Cart */}
-                      <div className="ml-4 flow-root lg:ml-8">
-                        <a href="#" className="group -m-2 flex items-center p-2">
-                          <ShoppingBagIcon
-                            className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                            aria-hidden="true"
-                          />
-                          <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                          <span className="sr-only">items in cart, view bag</span>
-                        </a>
+                      <div className="ml-4 flow-root lg:ml-8 hidden sm:flex">
+                        <Link href="/contact" className="group -m-2 flex items-center p-2">
+                          <button
+                            type="button"
+                            className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                          >
+                            <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
+                            Telephone Us
+                          </button>
+
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -450,6 +420,6 @@ export default function Example() {
           </div>
         </nav>
       </header>
-    </div>
+    </div >
   )
 }

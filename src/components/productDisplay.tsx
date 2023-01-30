@@ -19,7 +19,7 @@ function classNames(...classes: string[]) {
 
 
 
-export default function productDisplay({
+export default function ProductDisplay({
   data,
   meta,
 

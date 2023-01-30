@@ -126,7 +126,7 @@ export default function Example({ data }: any) {
 
   )
 }
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
 
   const res = await fetch('http://localhost:1337/api/faqs')
   const data = await res.json();

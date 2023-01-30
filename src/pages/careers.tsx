@@ -19,7 +19,6 @@ import image2 from '@/images/photos/portait_rolex.jpg'
 import image3 from '@/images/photos/05_6_portrait_large.jpg'
 import image from '@/images/photos/portrait.jpg'
 import Image from "next/image"
-import { GetStaticProps } from 'next'
 
 export default function Example() {
     return (

@@ -21,11 +21,11 @@ function classNames(...classes: string[]) {
 
 export default function ProductDisplay({
   data,
-  meta,
+
 
 }: {
   data: any;
-  meta: any;
+
 }) {
   const router = useRouter();
 

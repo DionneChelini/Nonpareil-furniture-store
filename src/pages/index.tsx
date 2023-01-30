@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import clsx from 'clsx'
 import React from 'react'
 import Container from '../layouts/container'
 
@@ -44,9 +43,8 @@ import image25 from '@/images/photos/Rolex_Datejust_Pearlmaster_39_86285_0004_3_
 import image26 from '@/images/photos/Rolex_Datejust_Pearlmaster_39_86285_0004_1_carousel_large.jpg'
 import image27 from '@/images/photos/Rolex_Datejust_Pearlmaster_39_86285_0004_2_carousel_large.jpg'
 
-import { Inter } from '@next/font/google'
-import LogoCloud from '../components/logocloud'
-const inter = Inter({ subsets: ['latin'] })
+
+
 
 /*
   This example requires some changes to your config:
@@ -69,13 +67,7 @@ type brandProps = {
   imageAlt: string
 
 }[]
-type props = {
-  brand: string;
-  imageSrc: string;
-  imageAlt: string
-  availability: string
 
-}[]
 
 const posts = [
   {

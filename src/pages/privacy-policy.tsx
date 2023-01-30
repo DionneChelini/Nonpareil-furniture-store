@@ -19,7 +19,6 @@ import image2 from '@/images/photos/portait_rolex.jpg'
 import image3 from '@/images/photos/05_6_portrait_large.jpg'
 import image from '@/images/photos/portrait.jpg'
 import Image from "next/image"
-import { GetStaticProps } from 'next'
 
 const items = [
   { id: 1, item: 'to meet the purpose for which it was submitted; or' },
@@ -30,7 +29,7 @@ const items = [
   // More items...
 ]
 
-export default function Example({ data }: { data: any }) {
+export default function Example() {
   return (
     <div className="bg-white mt-20 max-w-7xl mx-auto sm:px-8">
       <div className="pt-32 overflow-hidden sm:pt-14">

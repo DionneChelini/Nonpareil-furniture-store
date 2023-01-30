@@ -14,11 +14,11 @@
   ```
 */
 import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition, Disclosure } from '@headlessui/react'
+import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
+
   DevicePhoneMobileIcon,
   ArrowLeftIcon,
   QuestionMarkCircleIcon,
@@ -31,13 +31,9 @@ import image4 from '@/images/photos/image-3.jpg'
 import image5 from '@/images/photos/chanel.jpg'
 import image6 from '@/images/photos/panarei.jpg'
 import image7 from '@/images/photos/vanceet.jpg'
-import logo from '@/images/navbarlogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface navigation {
-  categories: [{ name: string, featured: [{ name: string, href: string, imageSrc?: string, imageAlt?: string, selection?: [{ href: string, subcategory: string }] }] }]
-}
 
 
 
@@ -237,7 +233,7 @@ export default function Example() {
                     {navigation.categories.map((category) => (
                       <Tab.Panel key={category.name} className="space-y-12 px-4 py-6">
                         <div className="grid grid-cols-2 gap-x-4 gap-y-10" >
-                          {category.featured.map((item, i) => (
+                          {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
                               <Link href={item.href} className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                 <Image src={item.imageSrc} alt={item.imageAlt} width={400} height={400} className="object-cover object-center" />

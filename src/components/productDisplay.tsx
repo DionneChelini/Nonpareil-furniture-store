@@ -18,8 +18,7 @@ function classNames(...classes: string[]) {
 }
 
 
-
-export default function ProductDisplay({
+function ProductDisplay({
   data,
 }: {
   data: any;
@@ -247,3 +246,6 @@ export default function ProductDisplay({
     </div>
   );
 }
+ProductDisplay.displayName = "ProductDisplay"
+
+export default ProductDisplay;

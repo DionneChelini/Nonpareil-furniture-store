@@ -8,7 +8,10 @@ interface propTypes {
 
 
 
-export default function Example({children}: {children: propTypes['children']}) {
+function Container({ children }: { children: propTypes['children'] }) {
     return <div className="mx-auto relative">{children}</div>
-  }
-  
+}
+
+Container.displayName = "Container"
+
+export default Container

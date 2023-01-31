@@ -9,7 +9,7 @@ type Props = {
 
 
 
-export default function Layout({ children }: Props) {
+function Layout({ children }: Props) {
   return (
     <div>
 
@@ -18,3 +18,6 @@ export default function Layout({ children }: Props) {
     </div>
   )
 }
+Layout.displayName = "Layout"
+
+export default Layout

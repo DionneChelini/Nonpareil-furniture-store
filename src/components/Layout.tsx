@@ -2,13 +2,15 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { ReactNode } from 'react'
 
-interface propTypes {
-  children: ReactNode
+type Props = {
+  children?: ReactNode
+  title?: string
 }
 
 
 
-export default function Layout({ children }: { children: propTypes['children'] }) {
+
+export default function Layout({ children }: Props) {
   return (
     <>
       <Navbar />

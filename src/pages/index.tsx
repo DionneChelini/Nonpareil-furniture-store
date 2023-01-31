@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import React from 'react'
-import Container from '../layouts/container'
+import Container from '../components/Container'
 
 import { motion } from 'framer-motion'
 import { ArrowDownIcon } from "@heroicons/react/24/solid";

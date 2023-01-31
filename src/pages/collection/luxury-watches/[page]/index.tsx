@@ -18,11 +18,13 @@
 
 import { GetStaticProps } from "next";
 import paths from '../../../../paths/product_paths'
-import ProductDisplay from "@/components/ProductDisplay";
-
+import ProductDisplay from "../../../../components/ProductDisplay";
+import Head from 'next/head'
 
 export default function Example(props: any) {
-    return <ProductDisplay data={props.data} />
+    return <> <Head>
+        <title>Luxury Watches - Nonpareil Collection</title>
+    </Head><ProductDisplay data={props.data} /></>
 }
 
 export const getStaticPaths = async () => {

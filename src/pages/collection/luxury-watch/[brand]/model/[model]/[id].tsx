@@ -15,14 +15,14 @@
 */
 
 import { Disclosure, Tab } from '@headlessui/react'
-
+import capitalizeFirstLetter from '@/utils/capitalizeFirstLetter'
 import { DevicePhoneMobileIcon, MinusIcon, PlusIcon, } from '@heroicons/react/24/outline'
 import { GetStaticProps } from 'next'
 import { v4 as uuid } from 'uuid'
 import fedex from '@/images/fedex.svg'
 import Image from "next/image"
 import Link from 'next/link'
-
+import Head from 'next/head'
 const policies = [
   { name: 'International delivery', icon: fedex, description: 'Get your order in 10-15 days' },
 
@@ -37,6 +37,9 @@ export default function Example({ data }: { data: any }) {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>{capitalizeFirstLetter(data[1].brand) + " " + capitalizeFirstLetter(data[1].subcategory)} Item</title>
+      </Head>
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
           {/* Image gallery */}

@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 
-export default function Example() {
+function Footer() {
   let footerNavigation = {
     service: [
       { name: 'Shipping & returns', href: 'shipping-and-returns' },
@@ -81,3 +81,6 @@ export default function Example() {
     </footer>
   )
 }
+Footer.displayName = "Footer"
+
+export default Footer

@@ -167,7 +167,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+function Navbar() {
   const [open, setOpen] = useState(false);
   const router = useRouter()
 
@@ -419,3 +419,6 @@ export default function Example() {
     </div >
   )
 }
+Navbar.displayName = "Navbar"
+
+export default Navbar;

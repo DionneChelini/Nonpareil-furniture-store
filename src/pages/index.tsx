@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import React from 'react'
 import Container from '../components/Container'
-
+import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import Link from 'next/link'
@@ -1168,7 +1168,7 @@ function Hero(props: any) {
 export default function Home(props: any) {
   console.log(props)
   return (
-    <>
+    <Layout>
       <Head>
         <title>Nonpareil Collection - Luxury Timepieces</title>
         <meta name="description" content="The Ultimate Destination For Luxury Timepieces" />
@@ -1181,7 +1181,7 @@ export default function Home(props: any) {
       </main>
 
 
-    </>
+    </Layout>
   )
 }
 

@@ -1,12 +1,11 @@
 import { GetStaticProps } from "next";
 import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '@/paths/category_sort_paths'
-import ProductDisplay from "@/components/Productdisplay";
 import Head from 'next/head'
 export default function Example(props: any) {
   return <> <Head>
     <title>{capitalizeFirstLetter(props.data[1].brand)} Collection</title>
-  </Head><ProductDisplay data={props.data} /></>
+  </Head></>
 }
 
 export const getStaticPaths = async () => {

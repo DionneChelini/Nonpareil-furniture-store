@@ -1,7 +1,7 @@
 
 import { ReactNode } from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+// import Navbar from './Navbar'
+// import Footer from './Footer'
 type Props = {
   children?: ReactNode
   title?: string
@@ -13,9 +13,9 @@ type Props = {
 function Layout({ children }: Props) {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -19,7 +19,7 @@
 import { GetStaticProps } from "next";
 import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '../../../../../../../paths/subcategory_paths'
-import ProductDisplay from "@/components/ProductDisplay"
+import ProductDisplay from "../../../../../../../components/ProductDisplay"
 import Head from 'next/head'
 
 export default function Example(props: any) {

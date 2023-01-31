@@ -18,7 +18,7 @@
 
 import { GetStaticProps } from "next";
 import paths from '../../../../paths/product_paths'
-import ProductDisplay from "@/components/ProductDisplay";
+import ProductDisplay from "../../../../components/ProductDisplay";
 import Head from 'next/head'
 
 export default function Example(props: any) {

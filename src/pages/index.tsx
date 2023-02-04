@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import Link from 'next/link'
 import logo from '@/images/logo.png'
-
+import { v4 as uuid } from 'uuid'
 import sell from '@/images/photos/DSC2511-900x900.jpg'
 import buy from '@/images/photos/DSC0229-900x900.jpg'
 import trade from '@/images/photos/DSC9883-900x900.jpg'
@@ -150,7 +150,7 @@ function WithBackgroundImageAndDetailOverlay() {
         <h2 className="sm:text-4xl text-2xl py-8 font-extrabold text-gray-900">Browse by Category</h2>
         <div className="max-w-2xl mx-auto pb-16 grid grid-cols-1  sm:grid-cols-2 gap-8  sm:pb-24 lg:max-w-7xl">
           {brands.map((item) => {
-            return <div className="relative rounded-lg overflow-hidden lg:h-96">
+            return <div key={uuid()} className="relative rounded-lg overflow-hidden lg:h-96">
               <div className="absolute inset-0">
                 <Image
                   src={item.image}

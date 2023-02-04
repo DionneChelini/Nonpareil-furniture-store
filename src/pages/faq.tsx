@@ -131,7 +131,7 @@ export default function Example({ data }: any) {
 }
 export const getStaticProps: GetStaticProps = async () => {
 
-  const res = await fetch('http://localhost:1337/api/faqs')
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL_STRAPI}/api/faqs`)
   const data = await res.json();
   const mapped = data.data.map((item: any) => {
     return item.attributes

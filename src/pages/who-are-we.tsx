@@ -20,6 +20,7 @@ import image3 from '@/images/photos/05_6_portrait_large.jpg'
 import image from '@/images/photos/portrait.jpg'
 import Image from "next/image"
 import Head from 'next/head'
+import Link from 'next/link'
 const people = [
   {
     name: 'Daniele Marchie',
@@ -56,9 +57,9 @@ export default function Example() {
 
                 </h2>
                 <div className="mt-6 text-base">
-                  <a href="#" className="font-semibold text-white">
+                  <Link href="/" className="font-semibold text-white">
                     Nonpareil Collection
-                  </a>
+                  </Link>
                 </div>
               </div>
 

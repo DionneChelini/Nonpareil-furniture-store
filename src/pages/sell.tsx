@@ -21,11 +21,12 @@ import image from '@/images/photos/portrait.jpg'
 import Image from "next/image"
 import Head from 'next/head'
 
+
 export default function Example() {
     return (
-        <div className="bg-white mt-20 max-w-7xl mx-auto sm:px-8">
+        <div className=" mt-20 max-w-7xl mx-auto sm:px-8">
             <Head>
-                <title>How To Buy - Nonpareil Collection</title>
+                <title>Sell or Trade - Nonpareil Collection</title>
             </Head>
             <div className="pt-32 overflow-hidden sm:pt-14">
                 <div className="bg-black">
@@ -33,7 +34,12 @@ export default function Example() {
                         <div className="relative pt-48 pb-16 sm:pb-24">
                             <div>
                                 <h2 id="sale-heading" className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-                                    How to Purchase
+                                    Sell or Trade
+                                    <br />
+
+                                </h2>
+                                <h2 id="sale-heading" className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+                                    Your Watch
                                     <br />
 
                                 </h2>
@@ -103,53 +109,32 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-            <div className="relative bg-white max-w-7xl mx-auto">
-
-                <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
-                    <div className="lg:col-start-2 lg:pl-8">
-                        <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-
-                            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                                How to Buy?
-                            </h3>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Provide us the watch reference(s) or picture(s) or any information for our quotation and stock status through the below ways.
+            <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
+                <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
+                    <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
+                        <div>
+                            <h2 className="text-4xl font-bold tracking-tight text-gray-900">
+                                Sell or Trade in your old watch to fund your Next Purchase!
+                            </h2>
+                            <p className="mt-4 text-gray-500">
+                                Got an old watch you'd like to sell? Or just bored of what you currently have and want to change things up? We're always looking to buy in watches and would love to help you cash out on yours. Contact us by clicking the button below to provide us information  about your watch, and we will give you a free appraisal within 24 hours.
                             </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Whatsapp: +11111111
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Instagram: Nonpareil
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Facebook: Nonpareil
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Email: www.contact@nonpareilcollection.com
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Please reply within 24 hours to confirm the order placement with details including: the desired model, offered cash price and expected lead time.
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                Pay within 48 hours after the reply. We accept Cash, Bank Transfers and Stripe payments.
-                                *If the reply or payment is overdue, we will treat the customer as cancelling the order.
-
-
-                            </p>
-                            <p className="mt-8 text-lg text-gray-500">
-                                You can make an appointment to pick up in store. We can also send you the product if needed.
-                                *Buyers should be responsible for all shipping charges, taxes and handling fees, if applicable.
-
-
-
-                            </p>
-
-
                         </div>
+
+                    </div>
+                    <div className="mt-8 flex">
+                        <div className="inline-flex rounded-md shadow">
+                            <a
+                                href="#"
+                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                            >
+                                Sell or Trade Your Watch
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
 
     )

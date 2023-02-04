@@ -14,8 +14,8 @@
   }
   ```
 */
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/portait_rolex.jpg'
+import image1 from '@/images/photos/rolex-oyster.jpg'
+import image2 from '@/images/photos/vanceet.jpg'
 import image3 from '@/images/photos/05_6_portrait_large.jpg'
 import image from '@/images/photos/portrait.jpg'
 import Image from "next/image"
@@ -27,7 +27,7 @@ export default function Example() {
         <title>Contact - Nonpareil Collection</title>
       </Head>
       <div className="pt-32 overflow-hidden sm:pt-14">
-        <div className="bg-gray-800">
+        <div className="bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative pt-48 pb-16 sm:pb-24">
               <div>
@@ -49,7 +49,7 @@ export default function Example() {
                     <div className="flex-shrink-0">
                       <Image
                         className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
+                        src={image1}
                         alt=""
                       />
                     </div>
@@ -57,7 +57,7 @@ export default function Example() {
                     <div className="mt-6 flex-shrink-0 sm:mt-0">
                       <Image
                         className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image1}
+                        src={image3}
                         alt=""
                       />
                     </div>
@@ -66,7 +66,7 @@ export default function Example() {
                     <div className="flex-shrink-0">
                       <Image
                         className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image3}
+                        src={image}
                         alt=""
                       />
                     </div>
@@ -109,11 +109,11 @@ export default function Example() {
               <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Contact Details</h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Collaborate</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Enquiry</h3>
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
                       <dt className="sr-only">Email</dt>
-                      <dd>support@example.com</dd>
+                      <dd>contact@nonpareilcollection.com</dd>
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
@@ -121,73 +121,37 @@ export default function Example() {
                     </div>
                   </dl>
                 </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Press</h3>
-                  <dl className="mt-2 text-base text-gray-500">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>support@example.com</dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 123-4567</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Join our team</h3>
-                  <dl className="mt-2 text-base text-gray-500">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>support@example.com</dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 123-4567</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Say hello</h3>
-                  <dl className="mt-2 text-base text-gray-500">
-                    <div>
-                      <dt className="sr-only">Email</dt>
-                      <dd>support@example.com</dd>
-                    </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 123-4567</dd>
-                    </div>
-                  </dl>
-                </div>
+
+
+
               </div>
             </div>
             <div className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8">
               <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Locations</h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Los Angeles</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Australia</h3>
                   <div className="mt-2 text-base text-gray-500">
                     <p>4556 Brendan Ferry</p>
                     <p className="mt-1">Los Angeles, CA 90210</p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">New York</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Italy</h3>
                   <div className="mt-2 text-base text-gray-500">
                     <p>886 Walter Streets</p>
                     <p className="mt-1">New York, NY 12345</p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Toronto</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Dabai</h3>
                   <div className="mt-2 text-base text-gray-500">
                     <p>7363 Cynthia Pass</p>
                     <p className="mt-1">Toronto, ON N3Y 4H8</p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Chicago</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">New york</h3>
                   <div className="mt-2 text-base text-gray-500">
                     <p>726 Mavis Island</p>
                     <p className="mt-1">Chicago, IL 60601</p>

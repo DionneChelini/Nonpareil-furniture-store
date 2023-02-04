@@ -36,7 +36,7 @@ export default function Example() {
         <title>Privacy Policy - Nonpareil Collection</title>
       </Head>
       <div className="pt-32 overflow-hidden sm:pt-14">
-        <div className="bg-gray-900">
+        <div className="bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative pt-48 pb-16 sm:pb-24">
               <div>

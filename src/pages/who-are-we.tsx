@@ -41,12 +41,12 @@ const people = [
 ]
 export default function Example() {
   return (
-    <div className="bg-white mt-20 max-w-7xl mx-auto sm:px-8">
+    <div className=" mt-20 max-w-7xl mx-auto sm:px-8">
       <Head>
         <title>Who We Are - Nonpareil Collection</title>
       </Head>
       <div className="pt-32 overflow-hidden sm:pt-14">
-        <div className="bg-gray-800">
+        <div className="bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative pt-48 pb-16 sm:pb-24">
               <div>

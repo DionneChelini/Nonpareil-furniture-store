@@ -21,10 +21,12 @@ import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '@/paths/category_paths'
 import ProductDisplay from "../../../../../components/ProductDisplay";
 import Head from 'next/head'
+import image from '@/images/rolex.jpg'
+
 export default function Example(props: any) {
   return <> <Head>
-    <title>{capitalizeFirstLetter(props.data[1].brand)} - Nonpareil Collection</title>
-  </Head><ProductDisplay data={props.data} /></>
+    <title>{props.data.length === 0 ? 'Out of Stock' : capitalizeFirstLetter(props.data[0].brand)} - Nonpareil Collection</title>
+  </Head><ProductDisplay data={props.data} title={props.data.length === 0 ? 'Brand' : props.data[0].brand} /></>
 }
 
 export const getStaticPaths = async () => {
@@ -44,7 +46,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }&populate=images`
   );
   let data = await res.json();
-
+  console.log(data)
   let mapped = data.data.map((item: any) => {
     return {
       id: item.id,
@@ -52,6 +54,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       price: item.attributes.price,
       brand: item.attributes.brand,
       model: item.attributes.model,
+      availability: item.attributes.availability,
       images: item.attributes.images,
       subcategory: item.attributes.subcategory,
     };

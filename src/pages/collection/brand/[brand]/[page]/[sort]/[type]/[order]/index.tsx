@@ -3,10 +3,12 @@ import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '@/paths/category_sort_paths'
 import ProductDisplay from "../../../../../../../../components/ProductDisplay";
 import Head from 'next/head'
+
+
 export default function Example(props: any) {
   return <> <Head>
-    <title>{capitalizeFirstLetter(props.data[1].brand)} Collection</title>
-  </Head><ProductDisplay data={props.data} /></>
+    <title>{props.data.length === 0 ? 'Out of Stock' : capitalizeFirstLetter(props.data[0].brand)} Collection</title>
+  </Head><ProductDisplay data={props.data} title={props.data.length === 0 ? 'Brand' : props.data[0].brand} /></>
 }
 
 export const getStaticPaths = async () => {
@@ -32,6 +34,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       title: item.attributes.title,
       price: item.attributes.price,
       brand: item.attributes.brand,
+      availability: item.attributes.availability,
       model: item.attributes.model,
       images: item.attributes.images,
       subcategory: item.attributes.subcategory,

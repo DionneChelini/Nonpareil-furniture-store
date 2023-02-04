@@ -40,7 +40,7 @@ import Link from 'next/link'
 const navigation = {
   categories: [
     {
-      name: 'Main brands',
+      name: 'Shop',
       featured: [
         {
           name: 'ROLEX',
@@ -67,11 +67,11 @@ const navigation = {
           imageSrc: image2,
           imageAlt: 'Nonpareil Collection- Audemars Piguet Luxury Watches for Sale',
           selection: [
-            { href: "#", subcategory: "Royal Oak" },
-            { href: "#", subcategory: "Royal Oak Offshore" },
-            { href: "#", subcategory: "Royal Oak Concept" },
-            { href: "#", subcategory: "Code 11.59" },
-            { href: "#", subcategory: "Others" },
+            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-oak", subcategory: "Royal Oak" },
+            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-oak-offshore", subcategory: "Royal Oak Offshore" },
+            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-concept", subcategory: "Royal Oak Concept" },
+            { href: "/collection/brand/audemars-piguet/1/subcategory/code-11.59", subcategory: "Code 11.59" },
+            { href: "/collection/brand/audemars-piguet/1/subcategory/others", subcategory: "Others" },
           ]
         },
         {
@@ -80,12 +80,12 @@ const navigation = {
           imageSrc: image3,
           imageAlt: 'Nonpareil Collection- Patek Philippe Luxury Watches for Sale',
           selection: [
-            { href: "#", subcategory: "Grand Complications" },
-            { href: "#", subcategory: "Nautilus" },
-            { href: "#", subcategory: "Aquanaut" },
-            { href: "#", subcategory: "Complications" },
-            { href: "#", subcategory: "Calatrava" },
-            { href: "#", subcategory: "Others" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/grand-complications", subcategory: "Grand Complications" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/nautilus", subcategory: "Nautilus" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/aquanaut", subcategory: "Aquanaut" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/complications", subcategory: "Complications" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/calatrava", subcategory: "Calatrava" },
+            { href: "/collection/brand/patek-philippe/1/subcategory/others", subcategory: "Others" },
           ]
         },
         {
@@ -94,9 +94,9 @@ const navigation = {
           imageSrc: image4,
           imageAlt: 'Nonpareil Collection- Richard Mille Luxury Watches for Sale, Tourbillon Watches Richard Mille',
           selection: [
-            { href: "#", subcategory: "Tourbillon" },
-            { href: "#", subcategory: "Men" },
-            { href: "#", subcategory: "Ladies" },
+            { href: "/collection/brand/richard-mille/1/subcategory/tourbillon", subcategory: "Tourbillon" },
+            { href: "/collection/brand/richard-mille/1/subcategory/men", subcategory: "Men" },
+            { href: "/collection/brand/richard-mille/1/subcategory/ladies", subcategory: "Ladies" },
 
 
           ]
@@ -112,16 +112,16 @@ const navigation = {
           imageSrc: image5,
           imageAlt: 'Nonpareil Collection - Cartier Watch, Gucci Watch, Hermes Watch, Franck Muller Watch, Hublot Watch, Bvlgari Watch Collection',
           selection: [
-            { href: "#", subcategory: "Blancpain" },
-            { href: "#", subcategory: "Bvlgari" },
-            { href: "#", subcategory: "Cartier" },
-            { href: "#", subcategory: "Dietrich" },
-            { href: "#", subcategory: "Franck Muller" },
-            { href: "#", subcategory: "Girard Perregaux" },
-            { href: "#", subcategory: "Glashutte" },
-            { href: "#", subcategory: "Gucci" },
-            { href: "#", subcategory: "Hermes" },
-            { href: "#", subcategory: "Hublot" },
+            { href: "/collection/brand/blancpain/1", subcategory: "Blancpain" },
+            { href: "/collection/brand/bvlgari/1", subcategory: "Bvlgari" },
+            { href: "/collection/brand/cartier/1", subcategory: "Cartier" },
+            { href: "/collection/brand/dietrich/1", subcategory: "Dietrich" },
+            { href: "/collection/brand/franck-muller/1", subcategory: "Franck Muller" },
+            { href: "/collection/brand/girard-perregaux/1", subcategory: "Girard Perregaux" },
+            { href: "/collection/brand/glashutte/1", subcategory: "Glashutte" },
+            { href: "/collection/brand/gucci/1", subcategory: "Gucci" },
+            { href: "/collection/brand/hermes/1", subcategory: "Hermes" },
+            { href: "/collection/brand/hublot/1", subcategory: "Hublot" },
           ]
         },
         {
@@ -130,13 +130,13 @@ const navigation = {
           imageSrc: image6,
           imageAlt: 'Nonpareil Collection - IWC Watch, Montblanc Watch, Omega Watch, Panerai Watch, Piaget Watches For Sale Through Our Online Store',
           selection: [
-            { href: "#", subcategory: "IWC" },
-            { href: "#", subcategory: "Jaeger-LeCoultre" },
-            { href: "#", subcategory: "Longines" },
-            { href: "#", subcategory: "Montblanc" },
-            { href: "#", subcategory: "Omega" },
-            { href: "#", subcategory: "Panerai" },
-            { href: "#", subcategory: "Piaget" },
+            { href: "/collection/brand/iwc/1", subcategory: "IWC" },
+            { href: "//collection/brand/jaeger-lecoultre/1", subcategory: "Jaeger-LeCoultre" },
+            { href: "/collection/brand/longines/1", subcategory: "Longines" },
+            { href: "/collection/brand/montblanc/1", subcategory: "Montblanc" },
+            { href: "/collection/brand/omega/1", subcategory: "Omega" },
+            { href: "/collection/brand/panerai/1", subcategory: "Panerai" },
+            { href: "/collection/brand/piaget/1", subcategory: "Piaget" },
 
           ]
         },
@@ -146,18 +146,22 @@ const navigation = {
           imageSrc: image7,
           imageAlt: 'Nonpareil Collection - Roger Dubuis Watch, Tagheuer Watch, Tudor Watch',
           selection: [
-            { href: "#", subcategory: "Roger Dubuis" },
-            { href: "#", subcategory: "Tagheuer" },
-            { href: "#", subcategory: "Tudor" },
-            { href: "#", subcategory: "Vacheron Constantin" },
-            { href: "#", subcategory: "Vancleef" },
-            { href: "#", subcategory: "Zenith" },
+            { href: "/collection/brand/roger-dubuis/1", subcategory: "Roger Dubuis" },
+            { href: "/collection/brand/tagheuer/1", subcategory: "Tagheuer" },
+            { href: "/collection/brand/tudor/1", subcategory: "Tudor" },
+            { href: "/collection/brand/vacheron-constantin/1", subcategory: "Vacheron Constantin" },
+            { href: "/collection/brand/vancleef/1", subcategory: "Vancleef" },
+            { href: "/collection/brand/zenith/1", subcategory: "Zenith" },
           ]
         },
       ],
     },
 
 
+  ],
+  pages: [
+    { name: 'Sell / Trade', href: '/sell' },
+    { name: 'Consign', href: '/consign' },
 
   ],
 
@@ -172,10 +176,10 @@ function Navbar() {
   const router = useRouter()
 
   return (
-    <div className="bg-white pt-6">
+    <div className="bg-white">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="relative  z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -198,7 +202,7 @@ function Navbar() {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+              <Dialog.Panel className="relative flex w-full max-w-xs flex-col bg-white overflow-y-auto  pb-12 shadow-xl">
                 <div className="flex px-4 pt-5 pb-2">
                   <button
                     type="button"
@@ -256,6 +260,15 @@ function Navbar() {
 
 
 
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  {navigation.pages.map((page) => (
+                    <div key={page.name} className="flow-root">
+                      <Link href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
+                        {page.name}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
 
 
 
@@ -272,7 +285,7 @@ function Navbar() {
 
           {/* Secondary navigation */}
           <div className="bg-white">
-            <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="border-b border-gray-200">
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
@@ -280,7 +293,7 @@ function Navbar() {
                     {router.asPath !== '/' && <Link href="/">
 
                       <div className='flex justify-center items-center'>
-                        <ArrowLeftIcon className="h-4 w-4 mr-2kk" aria-hidden="true" />
+                        <ArrowLeftIcon className="h-3 w-3 mr-2" aria-hidden="true" />
                         Back Home
                       </div>
                     </Link>
@@ -353,6 +366,7 @@ function Navbar() {
                                       </div>
                                     </div>
 
+
                                   </Popover.Panel>
                                 </Transition>
                               </>
@@ -361,6 +375,17 @@ function Navbar() {
                         ))}
 
 
+
+
+                        {navigation.pages.map((page) => (
+                          <Link
+                            key={page.name}
+                            href={page.href}
+                            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                          >
+                            {page.name}
+                          </Link>
+                        ))}
                       </div>
                     </Popover.Group>
                   </div>
@@ -400,7 +425,7 @@ function Navbar() {
                         <Link href="/contact" className="group -m-2 flex items-center p-2">
                           <button
                             type="button"
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-800 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                           >
                             <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
                             Telephone Us
@@ -414,8 +439,8 @@ function Navbar() {
               </div>
             </div>
           </div>
-        </nav>
-      </header>
+        </nav >
+      </header >
     </div >
   )
 }

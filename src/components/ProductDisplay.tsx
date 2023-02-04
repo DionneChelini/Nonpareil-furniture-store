@@ -4,15 +4,12 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Image from "next/image";
-import audemars from "@/images/audemars.jpg";
-import rolex from "@/images/rolex.jpg";
-import mille from "@/images/mille.jpg";
-import philippe from "@/images/philippe.jpg";
-import others from "@/images/others.jpg";
+import Banner from "./Banner";
 import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { v4 as uuid } from 'uuid'
+import type { StaticImageData } from 'next/image'
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -20,8 +17,12 @@ function classNames(...classes: string[]) {
 
 function ProductDisplay({
   data,
+
+  title
 }: {
   data: any;
+
+  title: string
 
 }) {
   const router = useRouter();
@@ -39,6 +40,7 @@ function ProductDisplay({
 
     return (
       <div className='bg-white'>
+
         <div className='mx-auto max-w-2xl  py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8'>
           <div className='relative aspect-[9/10]  w-full  flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-gray-100 h-80 sm:rounded-2xl'>
 
@@ -52,7 +54,7 @@ function ProductDisplay({
                 <Link href="/contact" className="group -m-2 justify-center mt-6 flex items-center p-2">
                   <div
 
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-green-600 py-3 px-8 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-yellow-800 py-3 px-8 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
                     <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
                     Telephone Us
@@ -71,36 +73,8 @@ function ProductDisplay({
   }
 
   return (
-    <div>
-      <div className='bg-white'>
-        <div className='mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8'>
-
-          <div className='relative aspect-[9/10] w-full  flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 h-80 sm:rounded-2xl'>
-
-            <Image
-              src={router.query.brand === 'rolex' ? rolex : router.query.brand === 'audemars-piguet' ? audemars : router.query.brand === 'richard-mille' ? mille : router.query.brand === 'patek-philippe' ? philippe : others}
-              alt='some test'
-              className='absolute inset-0 h-full w-full object-cover bg-white'
-            />
-          </div>
-          <div className='mt-2 text-sm'>
-
-            <div className='md:flex'>
-              <button
-                type="button"
-                className="relative block w-full border-2 border-gray-300 border-dashed rounded-lg p-4 text-center focus:outline-none"
-              >
-
-                <span className="mt-1 block text-sm font-medium text-gray-500"> If you are having trouble finding a specific watch, we can help you out.  </span>
-
-              </button>
-
-
-            </div>
-
-          </div>
-        </div>
-      </div>
+    <div className="bg-black">
+      <Banner title={title} />
       <div className='bg-white'>
         <main className='pb-24'>
 
@@ -116,7 +90,7 @@ function ProductDisplay({
               <div className='mx-auto flex max-w-7xl space-x-6 divide-x divide-gray-200 px-4 text-sm sm:px-6 lg:px-8'>
 
                 <div className=''>
-                  <h1 className='text-gray-500'>
+                  <h1 className='text-gray-300'>
                     &bull; / collection / brand / {router.query.brand}
                   </h1>
                 </div>
@@ -182,7 +156,7 @@ function ProductDisplay({
               Products
             </h2>
 
-            <div className='-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-4 lg:grid-cols-4'>
+            <div className='-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-3'>
               {data.map((product: any) => (
                 <Link
                   href={`${process.env.NEXT_PUBLIC_WEBSITE_URL}collection/luxury-watch/${product.brand.replaceAll(/ /gi, '-').toLowerCase()}/model/${product.model}/${product.id}`}
@@ -198,7 +172,7 @@ function ProductDisplay({
                       {product.availability}
                     </span>
                   </div>
-                  <div className='aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75'>
+                  <div className='aspect-w-1 aspect-h-2 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75'>
                     {product.images.data[0].attributes.formats.large ? (
                       <img
                         src={`${process.env.NEXT_PUBLIC_URL_STRAPI + product.images.data[0].attributes.formats.large.url}`}

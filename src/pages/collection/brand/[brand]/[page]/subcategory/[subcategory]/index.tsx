@@ -23,9 +23,10 @@ import ProductDisplay from "../../../../../../../components/ProductDisplay"
 import Head from 'next/head'
 
 export default function Example(props: any) {
+
     return <> <Head>
-        <title>{capitalizeFirstLetter(props.data[1].brand) + ' ' + capitalizeFirstLetter(props.data[1].subcategory)} - Nonpareil Collection</title>
-    </Head><ProductDisplay data={props.data} /></>
+        <title>{props.data.length === 0 ? 'Shop' : (props.data[0].brand) + ' ' + (props.data[0].subcategory)} - Nonpareil Collection</title>
+    </Head><ProductDisplay data={props.data} title={props.data.length === 0 ? 'Collection' : props.data[0].brand + " " + props.data[0].subcategory} /></>
 }
 export const getStaticPaths = async () => {
     return {
@@ -37,10 +38,11 @@ export const getStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
     const { params } = context;
     //request and response to/from strapi api
+
     const subcategory = params?.subcategory && params?.subcategory.toString()
     const res = await fetch(
         `${process.env.NEXT_PUBLIC_URL_STRAPI}/api/products?pagination[page]=${params && params.page
-        }&pagination[pageSize]=50&filters[subcategory][$eq]=${subcategory && capitalizeFirstLetter(subcategory)
+        }&pagination[pageSize]=50&filters[subcategory][$eq]=${subcategory && capitalizeFirstLetter(subcategory).replace(/-/, '')
         }&populate=images`
     );
     let data = await res.json();
@@ -52,6 +54,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
             price: item.attributes.price,
             brand: item.attributes.brand,
             model: item.attributes.model,
+            availability: item.attributes.availability,
             images: item.attributes.images,
             subcategory: item.attributes.subcategory,
         };

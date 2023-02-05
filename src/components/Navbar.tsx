@@ -422,16 +422,19 @@ function Navbar() {
 
                       {/* Cart */}
                       <div className="ml-4 flow-root lg:ml-8 hidden sm:flex">
-                        <Link href="/contact" className="group -m-2 flex items-center p-2">
+
+
+                        <div className="group -m-2 flex justify-center items-center p-2">
                           <button
                             type="button"
-                            className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-800 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                            className="inline-flex text-xs justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 sm:mr-4 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                           >
                             <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
-                            Telephone Us
+
+                            WhatsApp +393278659243
                           </button>
 
-                        </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

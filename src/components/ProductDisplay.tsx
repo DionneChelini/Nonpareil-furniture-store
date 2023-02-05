@@ -51,16 +51,38 @@ function ProductDisplay({
               >
 
                 <span className="mt-2 block text-sm font-medium text-gray-900">We currently don't have {router.query.brand && capitalizeFirstLetter(router.query.brand.toString())} in stock, however we are able to source {router.query.brand && capitalizeFirstLetter(router.query.brand.toString())} watches through our global network of suppliers. If you are having trouble finding a specific model, reach out to us and we may be able to help you out.  </span>
-                <Link href="/contact" className="group -m-2 justify-center mt-6 flex items-center p-2">
-                  <div
+                <div className="flow-root mt-4 justify-center h-full items-center">
+                  <div className="group justify-end  items-center p-2">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 sm:mr-2 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    >
 
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-yellow-800 py-3 px-8 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                  >
-                    <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
-                    Telephone Us
+                      WhatsApp +393278659243
+                    </button>
+
                   </div>
+                  <div className="group justify-center  flex items-center p-2">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-700 sm:mr-2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    >
 
-                </Link>
+                      <p>   Live Chat </p>
+                    </button>
+
+                  </div>
+                  <Link href="/contact" className="group justify-center  flex items-center p-2">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-700 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    >
+
+                      Email
+                    </button>
+
+                  </Link>
+                </div>
               </div>
 
 
@@ -201,7 +223,7 @@ function ProductDisplay({
                   </div>
                   <div className=' pb-4'>
 
-                    <h3 className='text-sm mt-4  text-gray-600'>
+                    <h3 className='text-sm mt-4 capitalize  text-gray-600'>
 
                       {product.title}
                     </h3>

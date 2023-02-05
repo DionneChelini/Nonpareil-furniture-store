@@ -117,7 +117,7 @@ export default function Example() {
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
-                      <dd>+1 (555) 123-4567</dd>
+                      <dd>+393278659243</dd>
                     </div>
                   </dl>
                 </div>

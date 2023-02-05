@@ -25,7 +25,6 @@ export default function Example() {
         <div className="bg-white mt-20 max-w-7xl mx-auto sm:px-8">
             <Head>
                 <title>Careers - Nonpareil Collection</title>
-
             </Head>
             <div className="pt-32 overflow-hidden sm:pt-14">
                 <div className="bg-black">

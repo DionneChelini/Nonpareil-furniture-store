@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="description" content="Rolex, Audemars Piguet, Richard Mille, Patek Philippe, Franck Muller, Luxurious Pre-owned Watches" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="https://www.nonpareilcollection.com/preview.jpg" />
+
 
       </Head>
       <main>

@@ -240,7 +240,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       data: Object.entries(product.data)[1]
     },
-    revalidate: 30
+
 
   }
 

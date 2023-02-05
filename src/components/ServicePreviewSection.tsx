@@ -16,14 +16,14 @@ const callouts = [
 
         imageSrc: sell,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-        href: '/sell',
+        href: '/sell-or-trade',
     },
     {
         name: 'Trade',
 
         imageSrc: trade,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: '/trade',
+        href: '/sell-or-trade',
     },
     {
         name: 'Consign',

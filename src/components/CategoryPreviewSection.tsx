@@ -1,10 +1,10 @@
 import Link from "next/link"
 //images
-import richardMille from '@/images/photos/rm07back_landscape_large.jpg'
-import audemarsPiguet from '@/images/photos/AP_Royal.jpg'
-import rolex from '@/images/photos/05_6_portrait_large.jpg'
-import patekPhilippe from '@/images/photos/PatekPhilippe5531RLakeGenevaELITA__carousel_large.jpg'
-import other from '@/images/photos/image_5_38906541ed.webp'
+import richardMille from '@/images/home/rm-category.png'
+import audemarsPiguet from '@/images/home/audemars-category.png'
+import rolex from '@/images/home/rolex-category.png'
+import patekPhilippe from '@/images/home/patek-category.png'
+import other from '@/images/home/other-category.png'
 import { v4 as uuid } from 'uuid'
 import Image from "next/image"
 

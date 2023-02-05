@@ -24,7 +24,7 @@ import {
   QuestionMarkCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import image1 from '@/images/photos/Rolex_Submariner.jpg'
+import image1 from '@/images/photos/m226659-0002.webp'
 import image2 from '@/images/photos/AP_Royal.jpg'
 import image3 from '@/images/photos/Geneva.jpg'
 import image4 from '@/images/photos/image-3.jpg'

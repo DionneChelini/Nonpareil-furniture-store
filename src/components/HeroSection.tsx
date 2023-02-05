@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import logo from '@/images/logo.png'
 import Image from 'next/image';
-import richardMilleImage from '@/images/photos/RM5206TourbillonBlackMaskELITAFinal42_portrait_large.jpg'
+import richardMilleImage from '@/images/home/hero.png'
 import Link from 'next/link';
 export default function Hero() {
     return (
@@ -21,9 +21,9 @@ export default function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 0.3 }}
                             transition={{ duration: 2.5 }}
-                            className=" opacity-30  h-full w-full" >
+                            className="   h-full w-full" >
 
-                            <Image alt="some image" src={richardMilleImage} className=" object-cover object-right h-full w-full" />
+                            <Image alt="some image" src={richardMilleImage} className=" object-cover opacity-50 object-right h-full w-full" />
                         </motion.div>
                         <motion.svg
                             viewBox='0 0 1440 783'

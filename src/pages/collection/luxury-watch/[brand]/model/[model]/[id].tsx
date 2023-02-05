@@ -239,7 +239,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       data: Object.entries(product.data)[1]
-    }
+    },
+    validate: 30
 
   }
 

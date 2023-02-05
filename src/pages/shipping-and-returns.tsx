@@ -14,7 +14,7 @@
   }
   ```
 */
-import image1 from '@/images/photos/image-1.jpg'
+import shipping from '@/images/shipping/delivery-shipping.png'
 import image2 from '@/images/photos/portait_rolex.jpg'
 import image3 from '@/images/photos/05_6_portrait_large.jpg'
 import image from '@/images/photos/portrait.jpg'
@@ -49,7 +49,7 @@ export default function Example() {
                     <div className="flex-shrink-0">
                       <Image
                         className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
+                        src={shipping}
                         alt=""
                       />
                     </div>
@@ -57,7 +57,7 @@ export default function Example() {
                     <div className="mt-6 flex-shrink-0 sm:mt-0">
                       <Image
                         className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image1}
+                        src={image}
                         alt=""
                       />
                     </div>

@@ -45,5 +45,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       data: mapped,
       meta: data.meta,
     },
+    revalidate: 30
   };
 };

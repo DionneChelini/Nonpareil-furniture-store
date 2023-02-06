@@ -1,34 +1,32 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import sell from '@/images/photos/DSC2511-900x900.jpg'
-import buy from '@/images/photos/DSC0229-900x900.jpg'
-import trade from '@/images/photos/DSC9883-900x900.jpg'
-import consign from '@/images/photos/DSC1844-2-900x900.jpg'
+import image from '@/images/home/preview.png'
+
 const callouts = [
     {
         name: 'Buy',
-        imageSrc: buy,
+        imageSrc: image,
         imageAlt: 'Nonpareil Collection ',
         href: '/collection/luxury-watches/1',
     },
     {
         name: 'Sell',
 
-        imageSrc: sell,
+        imageSrc: image,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: '/sell-or-trade',
     },
     {
         name: 'Trade',
 
-        imageSrc: trade,
+        imageSrc: image,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '/sell-or-trade',
     },
     {
         name: 'Consign',
 
-        imageSrc: consign,
+        imageSrc: image,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '/consign',
     },

@@ -18,19 +18,14 @@ import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import {
   Bars3Icon,
-
   DevicePhoneMobileIcon,
   ArrowLeftIcon,
   QuestionMarkCircleIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import image1 from '@/images/photos/m226659-0002.webp'
-import image2 from '@/images/photos/AP_Royal.jpg'
-import image3 from '@/images/photos/Geneva.jpg'
-import image4 from '@/images/photos/image-3.jpg'
-import image5 from '@/images/photos/chanel.jpg'
-import image6 from '@/images/photos/panarei.jpg'
-import image7 from '@/images/photos/vanceet.jpg'
+
+import image from '@/images/home/preview.png'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -45,7 +40,7 @@ const navigation = {
         {
           name: 'ROLEX',
           href: '/collection/brand/rolex/1',
-          imageSrc: image1,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection - Rolex Luxury Watches For Sale.',
           selection: [
             { href: "/collection/brand/rolex/1/subcategory/daytona", subcategory: "Daytona" },
@@ -64,7 +59,7 @@ const navigation = {
         {
           name: 'AUDEMARS PIGUET',
           href: '/collection/brand/audemars-piguet/1',
-          imageSrc: image2,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection- Audemars Piguet Luxury Watches for Sale',
           selection: [
             { href: "/collection/brand/audemars-piguet/1/subcategory/royal-oak", subcategory: "Royal Oak" },
@@ -77,7 +72,7 @@ const navigation = {
         {
           name: 'PATEK PHILIPPE',
           href: '/collection/brand/patek-philippe/1',
-          imageSrc: image3,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection- Patek Philippe Luxury Watches for Sale',
           selection: [
             { href: "/collection/brand/patek-philippe/1/subcategory/grand-complications", subcategory: "Grand Complications" },
@@ -91,7 +86,7 @@ const navigation = {
         {
           name: 'RICHARD MILLE',
           href: '/collection/brand/richard-mille/1',
-          imageSrc: image4,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection- Richard Mille Luxury Watches for Sale, Tourbillon Watches Richard Mille',
           selection: [
             { href: "/collection/brand/richard-mille/1/subcategory/tourbillon", subcategory: "Tourbillon" },
@@ -109,7 +104,7 @@ const navigation = {
         {
           name: 'A - H',
           href: '#',
-          imageSrc: image5,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection - Cartier Watch, Gucci Watch, Hermes Watch, Franck Muller Watch, Hublot Watch, Bvlgari Watch Collection',
           selection: [
             { href: "/collection/brand/blancpain/1", subcategory: "Blancpain" },
@@ -127,7 +122,7 @@ const navigation = {
         {
           name: 'I - Q',
           href: '#',
-          imageSrc: image6,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection - IWC Watch, Montblanc Watch, Omega Watch, Panerai Watch, Piaget Watches For Sale Through Our Online Store',
           selection: [
             { href: "/collection/brand/iwc/1", subcategory: "IWC" },
@@ -143,7 +138,7 @@ const navigation = {
         {
           name: 'R - Z',
           href: '#',
-          imageSrc: image7,
+          imageSrc: image,
           imageAlt: 'Nonpareil Collection - Roger Dubuis Watch, Tagheuer Watch, Tudor Watch',
           selection: [
             { href: "/collection/brand/roger-dubuis/1", subcategory: "Roger Dubuis" },

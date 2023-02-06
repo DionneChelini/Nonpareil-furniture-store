@@ -21,7 +21,6 @@ import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import paths from '@/paths/category_paths'
 import ProductDisplay from "../../../../../components/ProductDisplay";
 import Head from 'next/head'
-import image from '@/images/rolex.jpg'
 
 export default function Example(props: any) {
   return <> <Head>

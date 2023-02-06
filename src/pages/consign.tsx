@@ -1,23 +1,4 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-    ],
-  }
-  ```
-*/
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/portait_rolex.jpg'
-import image3 from '@/images/photos/05_6_portrait_large.jpg'
-import image from '@/images/photos/portrait.jpg'
+import image from '@/images/home/preview.png'
 import Image from "next/image"
 import Head from 'next/head'
 
@@ -64,7 +45,7 @@ export default function Example() {
                                         <div className="mt-6 flex-shrink-0 sm:mt-0">
                                             <Image
                                                 className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                                                src={image1}
+                                                src={image}
                                                 alt=""
                                             />
                                         </div>
@@ -73,7 +54,7 @@ export default function Example() {
                                         <div className="flex-shrink-0">
                                             <Image
                                                 className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                                                src={image3}
+                                                src={image}
                                                 alt=""
                                             />
                                         </div>
@@ -81,7 +62,7 @@ export default function Example() {
                                         <div className="mt-6 flex-shrink-0 sm:mt-0">
                                             <Image
                                                 className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                                                src={image2}
+                                                src={image}
                                                 alt=""
                                             />
                                         </div>

@@ -6,7 +6,6 @@ import ServicePreviewSection from '@/components/ServicePreviewSection'
 import HeroSection from '@/components/HeroSection'
 import CategoryPreviewSection from '@/components/CategoryPreviewSection'
 import BlogSection from '@/components/BlogSection'
-import image1 from '@/images/home/preview.jpg'
 
 
 

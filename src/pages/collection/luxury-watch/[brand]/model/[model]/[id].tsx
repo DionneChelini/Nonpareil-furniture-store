@@ -241,7 +241,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       data: Object.entries(product.data)[1]
     },
 
-    revalidate: 30
   }
 
 

@@ -197,25 +197,25 @@ function ProductDisplay({
                   <div className='aspect-w-1 aspect-h-2 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75'>
                     {product.images.data[0].attributes.formats.large ? (
                       <img
-                        src={`${process.env.NEXT_PUBLIC_URL_STRAPI + product.images.data[0].attributes.formats.large.url}`}
+                        src={`${product.images.data[0].attributes.formats.large.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : product.images.data[0].attributes.formats.medium ? (
                       <img
-                        src={`${process.env.NEXT_PUBLIC_URL_STRAPI + product.images.data[0].attributes.formats.medium.url}`}
+                        src={`${product.images.data[0].attributes.formats.medium.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : product.images.data[0].attributes.formats.small ? (
                       <img
-                        src={`${process.env.NEXT_PUBLIC_URL_STRAPI + product.images.data[0].attributes.formats.small.url}`}
+                        src={`${product.images.data[0].attributes.formats.small.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : (
                       <img
-                        src={`${process.env.NEXT_PUBLIC_URL_STRAPI + product.images.data[0].attributes.formats.thumbnail.url}`}
+                        src={`${product.images.data[0].attributes.formats.thumbnail.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />

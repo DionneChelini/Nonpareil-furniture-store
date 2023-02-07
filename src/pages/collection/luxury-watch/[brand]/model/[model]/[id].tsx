@@ -77,25 +77,25 @@ export default function Example({ data }: { data: any }) {
                 <Tab.Panel key={uuid()}>
                   {attributes.formats.large ? (
                     <img
-                      src={`${process.env.NEXT_PUBLIC_URL_STRAPI + attributes.formats.large.url}`}
+                      src={`${attributes.formats.large.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : attributes.formats.medium ? (
                     <img
-                      src={`${process.env.NEXT_PUBLIC_URL_STRAPI + attributes.formats.medium.url}`}
+                      src={`${attributes.formats.medium.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : attributes.formats.small ? (
                     <img
-                      src={`${process.env.NEXT_PUBLIC_URL_STRAPI + attributes.formats.small.url}`}
+                      src={`${attributes.formats.small.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : (
                     <img
-                      src={`${process.env.NEXT_PUBLIC_URL_STRAPI + attributes.formats.thumbnail.url}`}
+                      src={`${attributes.formats.thumbnail.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />

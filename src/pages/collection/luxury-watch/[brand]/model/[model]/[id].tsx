@@ -56,7 +56,7 @@ export default function Example({ data }: { data: any }) {
                       <>
                         <span className="sr-only"> {attributes.caption} </span>
                         <span className="absolute inset-0 overflow-hidden rounded-md">
-                          <Image src={`${attributes.formats.thumbnail.url}`} alt="" className="h-full w-full object-cover object-center" />
+                          <img src={`${attributes.formats.thumbnail.url}`} alt="" className="h-full w-full object-cover object-center" />
                         </span>
                         <span
                           className={classNames(
@@ -76,25 +76,25 @@ export default function Example({ data }: { data: any }) {
               {data[1].images.data.map(({ attributes }: any) => (
                 <Tab.Panel key={uuid()}>
                   {attributes.formats.large ? (
-                    <Image
+                    <img
                       src={`${attributes.formats.large.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : attributes.formats.medium ? (
-                    <Image
+                    <img
                       src={`${attributes.formats.medium.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : attributes.formats.small ? (
-                    <Image
+                    <img
                       src={`${attributes.formats.small.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'
                     />
                   ) : (
-                    <Image
+                    <img
                       src={`${attributes.formats.thumbnail.url}`}
                       alt={attributes.caption}
                       className='h-full w-full object-cover object-center'

@@ -8,6 +8,7 @@ import Banner from "./Banner";
 import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { v4 as uuid } from 'uuid'
+import Image from "next/image";
 import type { StaticImageData } from 'next/image'
 
 function classNames(...classes: string[]) {
@@ -196,25 +197,25 @@ function ProductDisplay({
                   </div>
                   <div className='aspect-w-1 aspect-h-2 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75'>
                     {product.images.data[0].attributes.formats.large ? (
-                      <img
+                      <Image
                         src={`${product.images.data[0].attributes.formats.large.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : product.images.data[0].attributes.formats.medium ? (
-                      <img
+                      <Image
                         src={`${product.images.data[0].attributes.formats.medium.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : product.images.data[0].attributes.formats.small ? (
-                      <img
+                      <Image
                         src={`${product.images.data[0].attributes.formats.small.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'
                       />
                     ) : (
-                      <img
+                      <Image
                         src={`${product.images.data[0].attributes.formats.thumbnail.url}`}
                         alt={product.imageAlt}
                         className='h-full w-full object-cover object-center'

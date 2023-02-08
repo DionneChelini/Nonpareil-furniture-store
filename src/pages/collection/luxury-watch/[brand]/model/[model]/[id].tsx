@@ -109,8 +109,10 @@ export default function Example({ data }: { data: any }) {
 
             <div
               className='text-base text-gray-700 space-y-6'
-              dangerouslySetInnerHTML={{ __html: data.description }}
-            />
+
+            >
+              {data.description}
+            </div>
           </div>
 
           {/* Product info */}

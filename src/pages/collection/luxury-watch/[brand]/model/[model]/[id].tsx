@@ -104,6 +104,14 @@ export default function Example({ data }: { data: any }) {
               ))}
             </Tab.Panels>
           </Tab.Group>
+          <div className='mt-6'>
+            <h3 className='sr-only'>Description</h3>
+
+            <div
+              className='text-base text-gray-700 space-y-6'
+              dangerouslySetInnerHTML={{ __html: data.description }}
+            />
+          </div>
 
           {/* Product info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">

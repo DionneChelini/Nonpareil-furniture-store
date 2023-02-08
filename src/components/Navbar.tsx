@@ -43,16 +43,6 @@ const navigation = {
           imageSrc: image,
           imageAlt: 'Nonpareil Collection - Rolex Luxury Watches For Sale.',
           selection: [
-            { href: "/collection/brand/rolex/1/subcategory/daytona", subcategory: "Daytona" },
-            { href: "/collection/brand/rolex/1/subcategory/submariner", subcategory: "Submariner" },
-            { href: "/collection/brand/rolex/1/subcategory/GMT-master", subcategory: "GMT Master" },
-            { href: "/collection/brand/rolex/1/subcategory/datejust", subcategory: "Datejust" },
-            { href: "/collection/brand/rolex/1/subcategory/daydate", subcategory: "Daydate" },
-            { href: "/collection/brand/rolex/1/subcategory/oyster-perpectual", subcategory: "Oyster Perpectual" },
-            { href: "/collection/brand/rolex/1/subcategory/sea-dweller", subcategory: "Sea Dweller" },
-            { href: "/collection/brand/rolex/1/subcategory/sky-dweller", subcategory: "Sky Dweller" },
-            { href: "/collection/brand/rolex/1/subcategory/yacht-master", subcategory: "Yacht Master" },
-            { href: "/collection/brand/rolex/1/subcategory/others", subcategory: "Others" },
 
           ]
         },
@@ -62,11 +52,7 @@ const navigation = {
           imageSrc: image,
           imageAlt: 'Nonpareil Collection- Audemars Piguet Luxury Watches for Sale',
           selection: [
-            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-oak", subcategory: "Royal Oak" },
-            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-oak-offshore", subcategory: "Royal Oak Offshore" },
-            { href: "/collection/brand/audemars-piguet/1/subcategory/royal-concept", subcategory: "Royal Oak Concept" },
-            { href: "/collection/brand/audemars-piguet/1/subcategory/code-11.59", subcategory: "Code 11.59" },
-            { href: "/collection/brand/audemars-piguet/1/subcategory/others", subcategory: "Others" },
+
           ]
         },
         {
@@ -75,12 +61,7 @@ const navigation = {
           imageSrc: image,
           imageAlt: 'Nonpareil Collection- Patek Philippe Luxury Watches for Sale',
           selection: [
-            { href: "/collection/brand/patek-philippe/1/subcategory/grand-complications", subcategory: "Grand Complications" },
-            { href: "/collection/brand/patek-philippe/1/subcategory/nautilus", subcategory: "Nautilus" },
-            { href: "/collection/brand/patek-philippe/1/subcategory/aquanaut", subcategory: "Aquanaut" },
-            { href: "/collection/brand/patek-philippe/1/subcategory/complications", subcategory: "Complications" },
-            { href: "/collection/brand/patek-philippe/1/subcategory/calatrava", subcategory: "Calatrava" },
-            { href: "/collection/brand/patek-philippe/1/subcategory/others", subcategory: "Others" },
+
           ]
         },
         {
@@ -89,68 +70,14 @@ const navigation = {
           imageSrc: image,
           imageAlt: 'Nonpareil Collection- Richard Mille Luxury Watches for Sale, Tourbillon Watches Richard Mille',
           selection: [
-            { href: "/collection/brand/richard-mille/1/subcategory/tourbillon", subcategory: "Tourbillon" },
-            { href: "/collection/brand/richard-mille/1/subcategory/men", subcategory: "Men" },
-            { href: "/collection/brand/richard-mille/1/subcategory/ladies", subcategory: "Ladies" },
+
 
 
           ]
         },
       ],
     },
-    {
-      name: 'Other Brands',
-      featured: [
-        {
-          name: 'A - H',
-          href: '#',
-          imageSrc: image,
-          imageAlt: 'Nonpareil Collection - Cartier Watch, Gucci Watch, Hermes Watch, Franck Muller Watch, Hublot Watch, Bvlgari Watch Collection',
-          selection: [
-            { href: "/collection/brand/blancpain/1", subcategory: "Blancpain" },
-            { href: "/collection/brand/bvlgari/1", subcategory: "Bvlgari" },
-            { href: "/collection/brand/cartier/1", subcategory: "Cartier" },
-            { href: "/collection/brand/dietrich/1", subcategory: "Dietrich" },
-            { href: "/collection/brand/franck-muller/1", subcategory: "Franck Muller" },
-            { href: "/collection/brand/girard-perregaux/1", subcategory: "Girard Perregaux" },
-            { href: "/collection/brand/glashutte/1", subcategory: "Glashutte" },
-            { href: "/collection/brand/gucci/1", subcategory: "Gucci" },
-            { href: "/collection/brand/hermes/1", subcategory: "Hermes" },
-            { href: "/collection/brand/hublot/1", subcategory: "Hublot" },
-          ]
-        },
-        {
-          name: 'I - Q',
-          href: '#',
-          imageSrc: image,
-          imageAlt: 'Nonpareil Collection - IWC Watch, Montblanc Watch, Omega Watch, Panerai Watch, Piaget Watches For Sale Through Our Online Store',
-          selection: [
-            { href: "/collection/brand/iwc/1", subcategory: "IWC" },
-            { href: "//collection/brand/jaeger-lecoultre/1", subcategory: "Jaeger-LeCoultre" },
-            { href: "/collection/brand/longines/1", subcategory: "Longines" },
-            { href: "/collection/brand/montblanc/1", subcategory: "Montblanc" },
-            { href: "/collection/brand/omega/1", subcategory: "Omega" },
-            { href: "/collection/brand/panerai/1", subcategory: "Panerai" },
-            { href: "/collection/brand/piaget/1", subcategory: "Piaget" },
 
-          ]
-        },
-        {
-          name: 'R - Z',
-          href: '#',
-          imageSrc: image,
-          imageAlt: 'Nonpareil Collection - Roger Dubuis Watch, Tagheuer Watch, Tudor Watch',
-          selection: [
-            { href: "/collection/brand/roger-dubuis/1", subcategory: "Roger Dubuis" },
-            { href: "/collection/brand/tagheuer/1", subcategory: "Tagheuer" },
-            { href: "/collection/brand/tudor/1", subcategory: "Tudor" },
-            { href: "/collection/brand/vacheron-constantin/1", subcategory: "Vacheron Constantin" },
-            { href: "/collection/brand/vancleef/1", subcategory: "Vancleef" },
-            { href: "/collection/brand/zenith/1", subcategory: "Zenith" },
-          ]
-        },
-      ],
-    },
 
 
   ],
@@ -243,7 +170,7 @@ function Navbar() {
                                 {item.name}
                               </Link>
 
-                              {category.name === 'Main Brands' && item.selection.map((j, i) => <Link href={j.href} key={i} aria-hidden="true" className="mt-1 flex-col flex text-sm text-gray-500 z-10">{j.subcategory}</Link>)}
+
 
                             </div>
                           ))}
@@ -352,7 +279,6 @@ function Navbar() {
                                               <span className="inset-0 relative z-10" aria-hidden="true" />
                                               <Link href={item.href} className="font-semibold text-gray-900"> <Popover.Button> {item.name}</Popover.Button></Link>
 
-                                              {item.selection.map((j, index) => <Link href={j.href} key={index} aria-hidden="true" className="flex-col z-10 flex mt-1"><Popover.Button className="flex">{j.subcategory} </Popover.Button></Link>)}
 
                                             </div>
 

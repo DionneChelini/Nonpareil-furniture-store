@@ -1,5 +1,4 @@
-import image from '@/images/home/preview.png'
-import Image from "next/image"
+import ImageGrid from '@/components/ImageGrid'
 import Head from 'next/head'
 export default function Example() {
   return (
@@ -25,59 +24,7 @@ export default function Example() {
               </div>
 
               <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0">
-                <div className="ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8">
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
+                <ImageGrid />
               </div>
             </div>
           </div>
@@ -90,16 +37,23 @@ export default function Example() {
               <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Contact Details</h2>
               <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
                 <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Enquiry</h3>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">Email</h3>
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
                       <dt className="sr-only">Email</dt>
                       <dd>contact@nonpareilcollection.com</dd>
                     </div>
-                    <div className="mt-1">
-                      <dt className="sr-only">Phone number</dt>
+
+                  </dl>
+                </div>
+                <div>
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">WhatsApp</h3>
+                  <dl className="mt-2 text-base text-gray-500">
+                    <div>
+                      <dt className="sr-only">WhatsApp</dt>
                       <dd>+393278659243</dd>
                     </div>
+
                   </dl>
                 </div>
 
@@ -107,39 +61,7 @@ export default function Example() {
 
               </div>
             </div>
-            <div className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8">
-              <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Locations</h2>
-              <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Australia</h3>
-                  <div className="mt-2 text-base text-gray-500">
-                    <p>4556 Brendan Ferry</p>
-                    <p className="mt-1">Los Angeles, CA 90210</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Italy</h3>
-                  <div className="mt-2 text-base text-gray-500">
-                    <p>886 Walter Streets</p>
-                    <p className="mt-1">New York, NY 12345</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">Dabai</h3>
-                  <div className="mt-2 text-base text-gray-500">
-                    <p>7363 Cynthia Pass</p>
-                    <p className="mt-1">Toronto, ON N3Y 4H8</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">New york</h3>
-                  <div className="mt-2 text-base text-gray-500">
-                    <p>726 Mavis Island</p>
-                    <p className="mt-1">Chicago, IL 60601</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

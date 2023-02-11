@@ -24,7 +24,10 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-import image from '@/images/home/preview.png'
+import image from '@/images/home/service-section/buy.png'
+import audemars from '@/images/home/audemars.png'
+import patek from '@/images/home/patek.png'
+import rm from '@/images/home/rm.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -49,7 +52,7 @@ const navigation = {
         {
           name: 'AUDEMARS PIGUET',
           href: '/collection/brand/audemars-piguet/1',
-          imageSrc: image,
+          imageSrc: audemars,
           imageAlt: 'Nonpareil Collection- Audemars Piguet Luxury Watches for Sale',
           selection: [
 
@@ -58,7 +61,7 @@ const navigation = {
         {
           name: 'PATEK PHILIPPE',
           href: '/collection/brand/patek-philippe/1',
-          imageSrc: image,
+          imageSrc: patek,
           imageAlt: 'Nonpareil Collection- Patek Philippe Luxury Watches for Sale',
           selection: [
 
@@ -67,7 +70,7 @@ const navigation = {
         {
           name: 'RICHARD MILLE',
           href: '/collection/brand/richard-mille/1',
-          imageSrc: image,
+          imageSrc: rm,
           imageAlt: 'Nonpareil Collection- Richard Mille Luxury Watches for Sale, Tourbillon Watches Richard Mille',
           selection: [
 
@@ -82,7 +85,7 @@ const navigation = {
 
   ],
   pages: [
-    { name: 'Sell / Trade', href: '/sell' },
+    { name: 'Sell / Trade', href: '/sell-or-trade' },
     { name: 'Consign', href: '/consign' },
 
   ],
@@ -255,11 +258,11 @@ function Navbar() {
                                 >
                                   <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
                                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                                    <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                                    <div className="absolute inset-0 top-1/2 shadow" aria-hidden="true" />
 
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-8">
-                                        <div className="grid grid-cols-4 gap-y-10 gap-x-8 py-16">
+                                        <div className="grid  grid-cols-4 gap-y-10 gap-x-8 py-16">
                                           {category.featured.map((item, i) => (
 
                                             <div key={item.name} className="group relative">
@@ -271,7 +274,7 @@ function Navbar() {
                                                     height={300}
                                                     src={item.imageSrc}
                                                     alt={item.imageAlt}
-                                                    className="object-cover object-center"
+                                                    className="object-cover  bg-gray-50 object-center"
                                                   />
                                                 </Popover.Button>
                                               </Link>

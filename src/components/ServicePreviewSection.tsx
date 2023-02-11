@@ -1,32 +1,35 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import image from '@/images/home/preview.png'
+import buy from '@/images/home/service-section/buy.png'
+import sell from '@/images/home/service-section/sell.jpg'
+import trade from '@/images/home/service-section/trade.jpg'
+import consign from '@/images/home/service-section/consign.jpg'
 
 const callouts = [
     {
         name: 'Buy',
-        imageSrc: image,
+        imageSrc: buy,
         imageAlt: 'Nonpareil Collection ',
         href: '/collection/luxury-watches/1',
     },
     {
         name: 'Sell',
 
-        imageSrc: image,
+        imageSrc: sell,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: '/sell-or-trade',
     },
     {
         name: 'Trade',
 
-        imageSrc: image,
+        imageSrc: trade,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '/sell-or-trade',
     },
     {
         name: 'Consign',
 
-        imageSrc: image,
+        imageSrc: consign,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '/consign',
     },
@@ -43,11 +46,11 @@ export default function ServicePreviewSection() {
                     <div className="mt-6 space-y-12  lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-x-6">
                         {callouts.map((callout) => (
                             <Link href={callout.href} key={callout.name} className="group relative">
-                                <div className="relative mb-8 w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                                <div className="relative mb-8 w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-full  lg:aspect-w-1 lg:aspect-h-1">
                                     <Image
                                         src={callout.imageSrc}
                                         alt={callout.imageAlt}
-                                        className="w-full h-full object-center object-cover"
+                                        className="object-center object-cover"
                                     />
                                 </div>
                                 <div className='bg-gray-50 opacity-90 absolute bottom-32 w-full py-2'>
@@ -58,7 +61,7 @@ export default function ServicePreviewSection() {
                             </Link>
                         ))}
                     </div>
-                    <h2 className="text-3xl tracking-tight text-gray-900 sm:text-4xl flex justify-center">We Do It All </h2>
+                    <h2 className="text-3xl tracking-tight mt-4 text-gray-900 sm:text-4xl flex justify-center">We Do It All </h2>
 
 
                 </div>

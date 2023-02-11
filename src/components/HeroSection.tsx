@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
 import logo from '@/images/logo.png'
 import Image from 'next/image';
-import richardMilleImage from '@/images/home/hero.png'
+import hero from '@/images/home/landing.jpg'
 import Link from 'next/link';
 export default function Hero() {
     return (
@@ -22,8 +22,8 @@ export default function Hero() {
                             animate={{ opacity: 0.3 }}
                             transition={{ duration: 2.5 }}
                             className="   h-full w-full" >
-
-                            <Image alt="some image" src={richardMilleImage} className=" object-cover opacity-50 object-right h-full w-full" />
+                            {/* <video src="http://localhost:3000/Rolex.mp4" autoPlay /> */}
+                            <Image alt="some image" src={hero} className=" object-cover   object-right h-full w-full" />
                         </motion.div>
                         <motion.svg
                             viewBox='0 0 1440 783'
@@ -144,11 +144,12 @@ export default function Hero() {
 
                     <div aria-hidden='true' className='absolute inset-0 ' />
                     <motion.div
-                        className='relative max-w-3xl mx-auto py-22 px-6 flex flex-col items-center pt-24 text-center sm:pb-32 lg:px-0'
+                        className='relative max-w-3xl  mx-auto py-22 px-6 flex flex-col items-center pt-24 text-center sm:pb-32 lg:px-0'
                         initial={{ opacity: 0, y: "20px" }}
                         animate={{ opacity: 1, y: "0px" }}
                         transition={{ duration: 2, delay: 1 }}
                     >
+
                         <Image
                             src={logo}
                             className=' object-cover sm:object-center  h-60 sm:h-auto'

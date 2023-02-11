@@ -1,5 +1,7 @@
 
-import image from '@/images/home/preview.png'
+import image from '@/images/informationPages/andrew-wise-uCLxbwqlkng-unsplash.jpg'
+import image2 from '@/images/informationPages/moughit-fawzi-_XJzWcd1NVw-unsplash.jpg'
+import ImageGrid from '@/components/ImageGrid'
 import Image from "next/image"
 import Head from 'next/head'
 import Link from 'next/link'
@@ -7,8 +9,8 @@ const people = [
   {
     name: 'Daniele Marchie',
     role: 'Co-Founder / CEO',
-    imageUrl: image,
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    imageUrl: image2,
+    bio: "Daniele Marchie is the co-founder & director of several online businesses. He co-founded www.ispeakItalian.co, the popular language learning platform teaching native English speakers Italian. He also co-founded Nonpareil Collection, the luxury furniture retailer operating in Australia. Daniele has invested in multiple startups, real estate and collectables. He currently resides in Italy, looking to venture into the luxury watch game. ",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -16,7 +18,7 @@ const people = [
     name: 'Dionne Chelini',
     role: 'Co-Founder / CEO',
     imageUrl: image,
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    bio: "Dionne Chelini is a software engineer, co-founder & director of several online businesses. He built and co-founded www.ispeakItalian.co, the popular language learning platform. He is the co-founder of Nonpareil Collection and has also invested in multiple startups. He resides in Melbourne Australia, and is currently leading a small team of developers.",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -46,59 +48,7 @@ export default function Example() {
               </div>
 
               <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0">
-                <div className="ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8">
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
+                <ImageGrid />
               </div>
             </div>
           </div>
@@ -116,7 +66,9 @@ export default function Example() {
                 {people.map((person) => (
                   <li key={person.name} className="sm:py-8">
                     <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
-
+                      <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                        <Image className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                      </div>
                       <div className="sm:col-span-2">
                         <div className="space-y-4">
                           <div className="text-lg leading-6 font-medium space-y-1">

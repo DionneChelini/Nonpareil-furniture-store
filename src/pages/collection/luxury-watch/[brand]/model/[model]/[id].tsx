@@ -114,6 +114,7 @@ export default function Example({ data }: { data: any }) {
             <div className="mt-3">
               <h2 className="sr-only">Product information</h2>
               <p className="text-3xl tracking-tight text-gray-900">{parseInt(data[1].price) > 500000 ? 'Price on Enquiry' : <>{usd} <span className='text-sm text-gray-400 capitalize'>USD</span> </>} </p>
+              <p className="text-xs tracking-tight text-gray-600 w-1/2">Price may be subject to change as market rate changes. Please contact us for an up to date price. </p>
             </div>
 
 

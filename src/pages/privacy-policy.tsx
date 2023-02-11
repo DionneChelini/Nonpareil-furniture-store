@@ -1,6 +1,5 @@
 
-import image from '@/images/home/preview.png'
-import Image from "next/image"
+import ImageGrid from '@/components/ImageGrid'
 import Head from 'next/head'
 const items = [
   { id: 1, item: 'to meet the purpose for which it was submitted; or' },
@@ -35,64 +34,14 @@ export default function Example() {
               </div>
 
               <div className="absolute -top-32 left-1/2 transform -translate-x-1/2 sm:top-6 sm:translate-x-0">
-                <div className="ml-24 flex space-x-6 min-w-max sm:ml-3 lg:space-x-8">
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-
-                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                      <Image
-                        className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72"
-                        src={image}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
+                <ImageGrid />
               </div>
+
+
             </div>
           </div>
         </div>
-      </div>
+      </div >
       <div className="relative bg-white max-w-7xl mx-auto">
 
         <div className="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-1">
@@ -150,7 +99,7 @@ export default function Example() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
   )
 }

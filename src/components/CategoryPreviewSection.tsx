@@ -1,10 +1,9 @@
 import Link from "next/link"
 //images
-import richardMille from '@/images/home/rm-category.png'
-import audemarsPiguet from '@/images/home/audemars-category.png'
-import rolex from '@/images/home/rolex-category.png'
-import patekPhilippe from '@/images/home/patek-category.png'
-import other from '@/images/home/other-category.png'
+import patekPhilippe from '@/images/home/DSC9899-900x900.jpg'
+import audemarsPiguet from '@/images/home/audemars-category.jpg'
+import rolex from '@/images/home/rolex-category.jpg'
+import richardMille from '@/images/home/rm-category.webp'
 import { v4 as uuid } from 'uuid'
 import Image from "next/image"
 
@@ -15,7 +14,7 @@ const brands = [
     { image: audemarsPiguet, brand: 'Audemars Piguet', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/audemars-piguet/1" },
     { image: rolex, brand: 'Rolex', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/rolex/1" },
 
-    { image: other, brand: 'Other', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/other/1" },
+    // { image: other, brand: 'Other', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/other/1" },
 ]
 
 export default function CategoryPreviewSection() {
@@ -71,7 +70,7 @@ export default function CategoryPreviewSection() {
                                 className="inline-flex justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 sm:mr-4 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                             >
 
-                                WhatsApp +12345678956
+                                WhatsApp +393278659243
                             </button>
 
                         </div>

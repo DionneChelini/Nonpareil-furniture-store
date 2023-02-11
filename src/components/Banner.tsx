@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import image from '@/images/home/preview.png'
+import image from '@/images/home/banner_1.jpg'
+import image2 from '@/images/home/audemars.png'
+import image3 from '@/images/home/patek.png'
+import image4 from '@/images/home/service-section/buy.png'
+import image5 from '@/images/home/rm.png'
 
 const Banner = ({ title }: { title: string }) => {
 
@@ -29,7 +33,7 @@ const Banner = ({ title }: { title: string }) => {
                                 <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                                     <div className="flex-shrink-0">
                                         <Image
-                                            className="h-64 w-64  filter grayscale opacity-50  rounded-lg object-cover md:h-72 md:w-72"
+                                            className="h-64 w-64 filter grayscale   opacity-40  rounded-lg object-cover md:h-72 md:w-72"
                                             src={image}
                                             alt=""
                                         />
@@ -38,7 +42,7 @@ const Banner = ({ title }: { title: string }) => {
                                     <div className="mt-6 flex-shrink-0 sm:mt-0">
                                         <Image
                                             className="h-64 w-64  filter grayscale  opacity-30 rounded-lg object-cover md:h-72 md:w-72"
-                                            src={image}
+                                            src={image3}
                                             alt=""
                                         />
                                     </div>
@@ -46,8 +50,8 @@ const Banner = ({ title }: { title: string }) => {
                                 <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                                     <div className="flex-shrink-0">
                                         <Image
-                                            className="h-64 w-64 filter grayscale opacity-30 rounded-lg object-cover md:h-72 md:w-72"
-                                            src={image}
+                                            className="h-64 w-64 filter grayscale opacity-20 rounded-lg object-cover md:h-72 md:w-72"
+                                            src={image2}
                                             alt=""
                                         />
                                     </div>
@@ -55,7 +59,7 @@ const Banner = ({ title }: { title: string }) => {
                                     <div className="mt-6 flex-shrink-0 sm:mt-0">
                                         <Image
                                             className="h-64 w-64 filter grayscale opacity-20 rounded-lg object-cover md:h-72 md:w-72"
-                                            src={image}
+                                            src={image4}
                                             alt=""
                                         />
                                     </div>
@@ -64,7 +68,7 @@ const Banner = ({ title }: { title: string }) => {
                                     <div className="flex-shrink-0">
                                         <Image
                                             className="h-64 w-64 filter grayscale opacity-20 rounded-lg object-cover md:h-72 md:w-72"
-                                            src={image}
+                                            src={image5}
                                             alt=""
                                         />
                                     </div>

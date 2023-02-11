@@ -5,10 +5,9 @@ import capitalizeFirstLetter from "@/utils/capitalizeFirstLetter";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Banner from "./Banner";
-import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
+
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { v4 as uuid } from 'uuid'
-import type { StaticImageData } from 'next/image'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");

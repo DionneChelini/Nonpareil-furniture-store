@@ -184,15 +184,7 @@ function ProductDisplay({
                   key={uuid()}
                   className='group relative border-r border-b border-gray-200 p-4 sm:p-6'
                 >
-                  <div className="relative bottom-0">
 
-                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 text-indigo-800">
-                      <svg className="mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
-                        <circle cx={4} cy={4} r={3} />
-                      </svg>
-                      {product.availability}
-                    </span>
-                  </div>
                   <div className='aspect-w-1 aspect-h-2 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75'>
                     {product.images.data[0].attributes.formats.large ? (
                       <img
@@ -226,9 +218,18 @@ function ProductDisplay({
 
                       {product.title}
                     </h3>
-                    <p className='mt-1 text-base font-medium text-gray-600'>
-                      {product.price > 100000 ? 'Price on request' : new Intl.NumberFormat("en-US", { style: "currency", "currency": "USD" }).format(product.price)}
+                    <p className='mt-1 text-base  text-gray-900'>
+                      {new Intl.NumberFormat("en-US", { style: "currency", "currency": "USD" }).format(product.price)} <span className="text-xs text-gray-400">USD</span>
                     </p>
+                    <div className="relative mt-1 bottom-0">
+
+                      <span className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-800">
+                        <svg className="mr-1.5 h-2 w-2 text-green-400" fill="currentColor" viewBox="0 0 8 8">
+                          <circle cx={4} cy={4} r={3} />
+                        </svg>
+                        {product.availability}
+                      </span>
+                    </div>
 
                   </div>
                 </Link>

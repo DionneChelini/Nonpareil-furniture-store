@@ -9,10 +9,10 @@ import Image from "next/image"
 
 
 const brands = [
-    { image: richardMille, brand: 'Richard Mille', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/richard-mille/1" },
-    { image: patekPhilippe, brand: 'Patek Philippe', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/patek-philippe/1" },
-    { image: audemarsPiguet, brand: 'Audemars Piguet', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/audemars-piguet/1" },
-    { image: rolex, brand: 'Rolex', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/rolex/1" },
+    { image: richardMille, brand: 'Richard Mille', description: 'Discover our exclusive collection of Richard Mille timepieces', href: "/collection/brand/richard-mille/1" },
+    { image: patekPhilippe, brand: 'Patek Philippe', description: "Discover our collection of Patek Philippe timepieces which embody the brand's uncompromising approach to craftsmanship", href: "/collection/brand/patek-philippe/1" },
+    { image: audemarsPiguet, brand: 'Audemars Piguet', description: "Discover our collection of Audemars Piguet timepieces", href: "/collection/brand/audemars-piguet/1" },
+    { image: rolex, brand: 'Rolex', description: 'Discover our collection of Rolex timepieces', href: "/collection/brand/rolex/1" },
 
     // { image: other, brand: 'Other', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto?', href: "/collection/brand/other/1" },
 ]

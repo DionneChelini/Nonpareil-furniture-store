@@ -93,7 +93,7 @@ export default function Example() {
               </p>
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Contact us</h2>
               <p className="mt-4 text-lg text-gray-500">
-                Please contact us on www.contact@nonpareilcollection.com if you wish to discuss any privacy issues, or if you do not wish to receive any future communications from Nonpareil.
+                Please contact us on contact@nonpareilcollection.com if you wish to discuss any privacy issues, or if you do not wish to receive any future communications from Nonpareil.
               </p>
             </div>
           </div>

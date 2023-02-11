@@ -48,13 +48,13 @@ export default function Example() {
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Order cancellations & amendments
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                Once a final order has been placed and payment has been received, it is scheduled for immediate processing and dispatch. Once an order is submitted we are unable to make any changes, additions or amendments to that order including but not limited to; change of delivery and/or billing address, changes to colours and sizes, adding or removing items, applying discounts or promotions or full order cancellations. Please ensure all details provided are complete and correct at the time of the order placement. If your order has already been processed and you wish to return an item, please contact our customer support team www.contact@nonpareilcollection.com for more information.
+                Once a final order has been placed and payment has been received, it is scheduled for immediate processing and dispatch. Once an order is submitted we are unable to make any changes, additions or amendments to that order including but not limited to; change of delivery and/or billing address, changes to colours and sizes, adding or removing items, applying discounts or promotions or full order cancellations. Please ensure all details provided are complete and correct at the time of the order placement. If your order has already been processed and you wish to return an item, please contact our customer support team contact@nonpareilcollection.com for more information.
 
               </p>
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Stock availability
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                Our sourcing agents are always striving to ensure that all items available for purchase are in stock, however from time to time our products are not available due to their limited availability and high market demand. Following receipt of your product enquiry, one of our service agents will contact you to confirm availability and process your order. If you have any questions regarding product availability, please contact our customer support team at www.contact@nonpareilcollection.com for more information.
+                Our sourcing agents are always striving to ensure that all items available for purchase are in stock, however from time to time our products are not available due to their limited availability and high market demand. Following receipt of your product enquiry, one of our service agents will contact you to confirm availability and process your order. If you have any questions regarding product availability, please contact our customer support team at contact@nonpareilcollection.com for more information.
 
               </p>
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Shipping partners
@@ -72,7 +72,7 @@ export default function Example() {
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Shipment tracking
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                You will receive an email with your tracking information once your order has been processed. You can track the progress of your order through the tracking number provided. If you are unable to locate your tracking number, or if you have any questions about your shipped order, please contact our customer support team at www.contact@nonpareilcollection.com.
+                You will receive an email with your tracking information once your order has been processed. You can track the progress of your order through the tracking number provided. If you are unable to locate your tracking number, or if you have any questions about your shipped order, please contact our customer support team at contact@nonpareilcollection.com.
 
               </p>
               <h2 className="leading-6 text-indigo-600 mt-6 font-semibold tracking-wide uppercase">Dispatch times
@@ -95,7 +95,7 @@ export default function Example() {
 
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                If your order is lost or damaged in transit, please call our customer support team on +111111111 or email us at www.contact@nonpareilcollection.com and our customer support team will assist with your enquiry.
+                If your order is lost or damaged in transit, please call our customer support team on +393278659243 or email us at contact@nonpareilcollection.com and our customer support team will assist with your enquiry.
 
 
 
@@ -111,7 +111,7 @@ export default function Example() {
 
               </p>
               <p className="mt-4 text-lg text-gray-500">
-                If your purchase is subject to customs duties and sales tax or VAT, your shipping provider will contact you about these fees, which must be paid before delivery of your purchase is scheduled. You will also be required to provide personal information for customs processing. Please note that shipping delays due to customs processing are not uncommon. Although we do not have control over customs delays and are not involved in the determination or collection of these fees, if you have any questions about customs, feel free to contact our customer support team at www.contact@nonpareilcollection.com.
+                If your purchase is subject to customs duties and sales tax or VAT, your shipping provider will contact you about these fees, which must be paid before delivery of your purchase is scheduled. You will also be required to provide personal information for customs processing. Please note that shipping delays due to customs processing are not uncommon. Although we do not have control over customs delays and are not involved in the determination or collection of these fees, if you have any questions about customs, feel free to contact our customer support team at contact@nonpareilcollection.com
 
 
 

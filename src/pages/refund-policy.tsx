@@ -47,7 +47,7 @@ export default function Example() {
 
                             </p>
                             <p className="mt-8 text-lg text-gray-500">
-                                To start a return, you can contact us at www.contact@nonpareilcollection.com or by whatsapp +111111111.
+                                To start a return, you can contact us at contact@nonpareilcollection.com or by whatsapp +393278659243.
                                 If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted.
                             </p>
 

@@ -43,7 +43,7 @@ export default function Example() {
                                 Provide us the watch reference(s) or picture(s) or any information for our quotation and stock status through the below ways.
                             </p>
                             <p className="mt-8 text-lg text-gray-500">
-                                Whatsapp: +11111111
+                                Whatsapp: +393278659243
                             </p>
                             <p className="mt-8 text-lg text-gray-500">
                                 Instagram: Nonpareil
@@ -52,7 +52,7 @@ export default function Example() {
                                 Facebook: Nonpareil
                             </p>
                             <p className="mt-8 text-lg text-gray-500">
-                                Email: www.contact@nonpareilcollection.com
+                                Email: contact@nonpareilcollection.com
                             </p>
                             <p className="mt-8 text-lg text-gray-500">
                                 Please reply within 24 hours to confirm the order placement with details including: the desired model, offered cash price and expected lead time.

@@ -120,13 +120,13 @@ export default function Example({ data }: { data: any }) {
 
             <div className="sm:flex-col1 mt-10 flex">
 
-              <Link href="/contact" className="group -m-2 flex items-center p-2">
+              <Link href="https://api.whatsapp.com/send?phone=393278659243" className="group -m-2 flex items-center p-2">
                 <button
                   type="button"
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-green-600 py-3 px-8 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
                   <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
-                  Telephone Us
+                  WhatsApp +393278659243
                 </button>
 
               </Link>

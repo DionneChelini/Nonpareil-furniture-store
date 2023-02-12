@@ -1,5 +1,6 @@
 import ImageGrid from '@/components/ImageGrid'
 import Head from 'next/head'
+import Link from 'next/link'
 export default function Example() {
   return (
     <div className="bg-white mt-20 max-w-7xl mx-auto sm:px-8">
@@ -46,7 +47,8 @@ export default function Example() {
 
                   </dl>
                 </div>
-                <div>
+                <Link href="https://api.whatsapp.com/send?phone=393278659243">
+
                   <h3 className="text-lg leading-6 font-medium text-gray-900">WhatsApp</h3>
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
@@ -55,7 +57,7 @@ export default function Example() {
                     </div>
 
                   </dl>
-                </div>
+                </Link>
 
 
 

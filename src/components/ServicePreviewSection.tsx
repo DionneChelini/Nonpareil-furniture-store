@@ -74,7 +74,7 @@ export default function ServicePreviewSection() {
                     </h2>
                     <p className='uppercase mt-8 font-semibold text-gray-500'>CONNECT NOW</p>
                     <div className="flow-root mt-4 justify-center  sm:flex">
-                        <div className="group -m-2 flex justify-center items-center p-2">
+                        <Link href="https://api.whatsapp.com/send?phone=393278659243" className="group -m-2 flex justify-center items-center p-2">
                             <button
                                 type="button"
                                 className="inline-flex justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 sm:mr-4 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
@@ -83,7 +83,7 @@ export default function ServicePreviewSection() {
                                 WhatsApp +393278659243
                             </button>
 
-                        </div>
+                        </Link>
                         <div className="group justify-center -m-2 flex items-center p-2">
                             <button
                                 type="button"

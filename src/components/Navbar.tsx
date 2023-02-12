@@ -348,17 +348,17 @@ function Navbar() {
                       <div className="ml-4 flow-root lg:ml-8 hidden sm:flex">
 
 
-                        <div className="group -m-2 flex justify-center items-center p-2">
-                          <button
-                            type="button"
+                        <Link href="https://api.whatsapp.com/send?phone=393278659243" className="group -m-2 flex justify-center items-center p-2">
+                          <div
+
                             className="inline-flex text-xs justify-center items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 sm:mr-4 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                           >
                             <DevicePhoneMobileIcon className="h-4 w-4 mr-2" aria-hidden="true" />
 
                             WhatsApp +393278659243
-                          </button>
+                          </div>
 
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

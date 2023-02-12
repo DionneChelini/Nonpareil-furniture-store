@@ -1,6 +1,6 @@
 
 import image from '@/images/informationPages/andrew-wise-uCLxbwqlkng-unsplash.jpg'
-import image2 from '@/images/informationPages/moughit-fawzi-_XJzWcd1NVw-unsplash.jpg'
+import image2 from '@/images/avatar/avatar.png'
 import ImageGrid from '@/components/ImageGrid'
 import Image from "next/image"
 import Head from 'next/head'

@@ -7,21 +7,21 @@ import Head from 'next/head'
 import Link from 'next/link'
 const people = [
   {
-    name: 'Daniele Marchie',
+    name: 'Daniele Marchei',
     role: 'Co-Founder / CEO',
     imageUrl: image2,
-    bio: "Daniele Marchie is the co-founder & director of several online businesses. He co-founded www.ispeakItalian.co, the popular language learning platform teaching native English speakers Italian. He also co-founded Nonpareil Collection, the luxury furniture retailer operating in Australia. Daniele has invested in multiple startups, real estate and collectables. He currently resides in Italy, looking to venture into the luxury watch game. ",
+    bio: "Daniele Marchei is the co-founder & director of several online businesses. He co-founded www.ispeakItalian.co, the popular language learning platform teaching native English speakers Italian. He also co-founded Nonpareil Collection, the luxury furniture retailer operating in Australia. Daniele has invested in multiple startups, real estate and collectables. He currently resides in Italy, looking to venture into the luxury watch game. ",
     twitterUrl: '#',
     linkedinUrl: '#',
   },
-  {
-    name: 'Dionne Chelini',
-    role: 'Co-Founder / CEO',
-    imageUrl: image,
-    bio: "Dionne Chelini is a software engineer, co-founder & director of several online businesses. He built and co-founded www.ispeakItalian.co, the popular language learning platform. He is the co-founder of Nonpareil Collection and has also invested in multiple startups. He resides in Melbourne Australia, and is currently leading a small team of developers.",
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
+  // {
+  //   name: 'Dionne Chelini',
+  //   role: 'Co-Founder / CEO',
+  //   imageUrl: image,
+  //   bio: "Dionne Chelini is a software engineer, co-founder & director of several online businesses. He built and co-founded www.ispeakItalian.co, the popular language learning platform. He is the co-founder of Nonpareil Collection and has also invested in multiple startups. He resides in Melbourne Australia, and is currently leading a small team of developers.",
+  //   twitterUrl: '#',
+  //   linkedinUrl: '#',
+  // },
   // More people...
 ]
 export default function Example() {

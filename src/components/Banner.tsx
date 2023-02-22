@@ -16,7 +16,7 @@ const Banner = ({ title }: { title: string }) => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative pt-48 pb-16 sm:pb-24">
                         <div>
-                            <h2 id="sale-heading" className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
+                            <h2 id="sale-heading" className="text-4xl capitalize font-extrabold tracking-tight text-white md:text-5xl">
                                 {title}
                                 <br />
 

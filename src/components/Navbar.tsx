@@ -164,11 +164,11 @@ function Navbar() {
                         <div className="grid grid-cols-2 gap-x-4 gap-y-10" >
                           {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
-                              <Link href={item.href} className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                              <Link href={item.href} onClick={() => setOpen(false)} className="aspect-w-1 aspect-h-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                 <Image src={item.imageSrc} alt={item.imageAlt} width={400} height={400} className="object-cover object-center" />
                               </Link>
 
-                              <Link href={item.href} className="mt-6 block text-sm font-medium text-gray-900">
+                              <Link href={item.href} onClick={() => setOpen(false)} className="mt-6 block text-sm font-medium text-gray-900">
                                 <span className="absolute inset-0 z-10" aria-hidden="true" />
                                 {item.name}
                               </Link>
@@ -188,7 +188,7 @@ function Navbar() {
                 <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <Link href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
+                      <Link href={page.href} onClick={() => setOpen(false)} className="-m-2 p-2 block font-medium text-gray-900">
                         {page.name}
                       </Link>
                     </div>

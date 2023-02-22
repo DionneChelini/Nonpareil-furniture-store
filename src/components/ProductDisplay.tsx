@@ -95,7 +95,7 @@ function ProductDisplay({
 
   return (
     <div className="bg-black">
-      <Banner title={capitalizeFirstLetter(title)} />
+      <Banner title={title}/>
       <div className='bg-white'>
         <main className='pb-24'>
 

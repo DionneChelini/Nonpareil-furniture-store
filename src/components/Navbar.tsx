@@ -153,7 +153,10 @@ function Navbar() {
                             )
                           }
                         >
+                          <Link href="\collection/luxury-watches/1">
+                          
                           {category.name}
+                          </Link>
                         </Tab>
                       ))}
                     </Tab.List>

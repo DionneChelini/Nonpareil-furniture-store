@@ -140,12 +140,13 @@ function Navbar() {
                 </div>
 
                 {/* Links */}
-                <Tab.Group as="div" className="mt-2">
+                <Tab.Group as="div" className="mt-2" >
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
                           key={category.name}
+                          
                           className={({ selected }) =>
                             classNames(
                               selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent',
@@ -153,7 +154,7 @@ function Navbar() {
                             )
                           }
                         >
-                          <Link href="/collection/luxury-watches/1">
+                          <Link href="/collection/luxury-watches/1" onClick={() => setOpen(false)} >
                           
                           {category.name}
                           </Link>

@@ -32,8 +32,8 @@ export default function Hero() {
                             animate={{ height: "80vh" }}
                             transition={{ delay: 2, duration: 3 }}
                         >
-                            <defs>
-                                <clipPath id='_clipPath_4aEgZJ6uh27W33RdUS7Zn1iefDgl2tXe'>
+                                              <defs>
+                                 <clipPath id='_clipPath_4aEgZJ6uh27W33RdUS7Zn1iefDgl2tXe'>
                                     <rect width='1440' height='783' />
                                 </clipPath>
                             </defs>

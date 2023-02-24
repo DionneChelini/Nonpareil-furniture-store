@@ -1,4 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
+import { GetStaticProps } from "next";
+
+
 const posts = [
     {
         title: 'Jacob & Co founder trouble with the law ',
@@ -115,3 +118,18 @@ export default function Example() {
         </div>
     )
 }
+export const getStaticProps: GetStaticProps = async (context) => {
+    let id = context.params && context.params.id
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL_STRAPI}/api/products/${id}?populate=*`)
+    let product = await res.json();
+  
+  
+    return {
+      props: {
+        data: Object.entries(product.data)[1]
+      },
+      revalidate: 30
+    }
+  
+  
+  }

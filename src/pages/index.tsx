@@ -27,7 +27,7 @@ export default function Home() {
           <HeroSection />
           <ServicePreviewSection />
           <CategoryPreviewSection />
-          {/* <BlogSection /> */}
+          <BlogSection />
         </Container>
       </main>
 

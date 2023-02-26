@@ -24,7 +24,7 @@ import Head from 'next/head'
 export default function Example(props: any) {
     return <> <Head>
         <title>Luxury Watches - Nonpareil Collection</title>
-    </Head><ProductDisplay data={props.data} title={'Catelogue'} /></>
+    </Head><ProductDisplay data={props.data} title={'Catalogue'} /></>
 }
 
 export const getStaticPaths = async () => {

@@ -66,7 +66,7 @@ export default function Example() {
 
           </div>
           <div className="lg:grid lg:grid-cols-3 lg:gap-8 mt-24">
-            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Locations</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Location</h2>
             <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
               <div>
                 <h3 className="text-lg leading-6 font-medium text-gray-900">Australia</h3>
@@ -75,6 +75,75 @@ export default function Example() {
                     <dt className="sr-only">Melbourne, Victoria</dt>
                     <dd>100 Harbour Esplanade, Docklands</dd>
                     <dd>Victoria, Australia, 3008</dd>
+                  </div>
+
+                </dl>
+              </div>
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Italy</h3>
+                <dl className="mt-2 text-base text-gray-500">
+                  <div>
+
+                    <dd>Online store only</dd>
+
+                  </div>
+
+                </dl>
+              </div>
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Hong Kong</h3>
+                <dl className="mt-2 text-base text-gray-500">
+                  <div>
+
+                    <dd>Online store only</dd>
+
+                  </div>
+
+                </dl>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div className="lg:grid lg:grid-cols-3 lg:gap-8 mt-24">
+            <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">Sales Staff</h2>
+            <div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Australia</h3>
+                <dl className="mt-2 text-base text-gray-500">
+                  <div>
+                    <dt className="sr-only">Australian Sales Staff</dt>
+                    <dd>Dionne Chelini</dd>
+                    <dd>Adrian Chelini</dd>
+                    <dd>Gianni Santancito</dd>
+
+
+
+                  </div>
+
+                </dl>
+              </div>
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Italy</h3>
+                <dl className="mt-2 text-base text-gray-500">
+                  <div>
+                    <dt className="sr-only">Italian Sales Staff</dt>
+                    <dd>Daniele Marchei</dd>
+
+                  </div>
+
+                </dl>
+              </div>
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Hong Kong</h3>
+                <dl className="mt-2 text-base text-gray-500">
+                  <div>
+                    <dt className="sr-only">Hong Kong Sales Staff</dt>
+                    <dd>Wu Jeng</dd>
+                    <dd>Cheuk Long</dd>
+
                   </div>
 
                 </dl>

@@ -136,18 +136,7 @@ export default function Example() {
 
                 </dl>
               </div>
-              <div>
-                <h3 className="text-lg leading-6 font-medium text-gray-900">Hong Kong</h3>
-                <dl className="mt-2 text-base text-gray-500">
-                  <div>
-                    <dt className="sr-only">Hong Kong Sales Staff</dt>
-                    <dd>Wu Jeng</dd>
-                    <dd>Cheuk Long</dd>
 
-                  </div>
-
-                </dl>
-              </div>
 
 
 

@@ -96,7 +96,7 @@ export default function Example({ data }: { data: Person[] }) {
                           <div className="text-lg">
                             <p className="text-gray-500">{person.attributes.bio}</p>
                           </div>
-                          <ul role="list" className="flex space-x-5">
+                          {/* <ul role="list" className="flex space-x-5">
                             <li>
                               <a href={person.attributes.twitter} className="text-gray-400 hover:text-gray-500">
                                 <span className="sr-only">Twitter</span>
@@ -117,7 +117,7 @@ export default function Example({ data }: { data: Person[] }) {
                                 </svg>
                               </a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </div>
                       </div>
                     </div>

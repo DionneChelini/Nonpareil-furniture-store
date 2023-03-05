@@ -16,11 +16,11 @@ function Footer() {
       { name: 'Contact', href: '/contact' },
       { name: 'Careers', href: '/careers' },
     ],
-    connect: [
-      { name: 'Instagram', href: '#' },
-      { name: 'Pinterest', href: '#' },
-      { name: 'Twitter', href: '#' },
-    ],
+    // connect: [
+    //   { name: 'Instagram', href: '#' },
+    //   { name: 'Pinterest', href: '#' },
+    //   { name: 'Twitter', href: '#' },
+    // ],
   }
   return (
     <footer aria-labelledby="footer-heading" className="bg-white">
@@ -33,7 +33,7 @@ function Footer() {
 
             <div>
               <h3 className="text-sm font-medium text-gray-900">Service</h3>
-                <ul role="list" className="mt-6 space-y-6">
+              <ul role="list" className="mt-6 space-y-6">
                 {footerNavigation.service.map((item) => (
                   <li key={item.name} className="text-sm">
                     <a href={item.href} className="text-gray-500 hover:text-gray-600">
@@ -56,7 +56,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-sm mt-8 md:mt-0 font-medium text-gray-900">Connect</h3>
             <ul role="list" className="mt-6 space-y-6">
               {footerNavigation.connect.map((item) => (
@@ -67,7 +67,7 @@ function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
         </div>
 
